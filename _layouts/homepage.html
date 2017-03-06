@@ -1,0 +1,54 @@
+---
+layout: homepage
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <img class="img-responsive center-block" src="images/Kalliope_logo_large.png">
+
+        <h3>Kalliope is a modular always-on voice controlled personal assistant designed for home automation.</h3>
+
+        <p class="lead">The concept is pretty simple:</p>
+        <ul>
+            <li>choose an order</li>
+            <li>attach actions to this order</li>
+        </ul>
+        <br>
+    </div>
+
+    <!-- installation -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Installation</h3>
+        </div>
+        <div class="panel-body">
+            <p class="lead">Kalliope can be installed on multiple linux system, and also on small single-board computers like the Raspberry Pi.</p>
+
+            <div class="row">
+                <div class="col-md-1 col-md-offset-2">
+                    <a class="btn btn-default btn-large" href="https://github.com/kalliope-project/kalliope/blob/master/Docs/installation/debian_jessie.md">
+                        <h1><span class="fl-debian"></span></h1>
+                    </a>
+                </div>
+                <div class="col-md-1 col-md-offset-2">
+                    <a class="btn btn-default btn-large" href="https://github.com/kalliope-project/kalliope/blob/master/Docs/installation/ubuntu_16.04.md">
+                        <h1><span class="fl-ubuntu"></span></h1>
+                    </a>
+                </div>
+                <div class="col-md-1 col-md-offset-2">
+                    <a class="btn btn-default btn-large" href="https://github.com/kalliope-project/kalliope/blob/master/Docs/installation/raspbian_jessie.md">
+                        <h1><span class="fl-raspberry-pi"></span></h1>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- neuron core -->
+    {% include core_neuron.html neurons=site.data.core_neurons %}
+
+</div>
+{% include footer.html %}

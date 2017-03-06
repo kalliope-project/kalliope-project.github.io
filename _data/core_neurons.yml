@@ -1,0 +1,5 @@
+- name: Ansible Playbook
+  description: Run an ansible playbook
+
+- name: Kill switch
+  description: Stop Kalliope process
