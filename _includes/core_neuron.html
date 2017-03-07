@@ -18,20 +18,22 @@
                 {% for neuron in include.neurons %}
                 <tr>
                     <td class="vert-align text-primary text-center">
-                        <img class="circle" src="/images/Ansible_logo.png" width="50" height="50">
+                        <img class="circle" src="/images/{{ neuron.logo }}" width="50" height="50">
                     </td>
                     <td class="vert-align text-primary">{{ neuron.name }}</td>
                     <td class="vert-align">{{ neuron.description }}</td>
                     <td class="vert-align">
-                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/ansible_playbook" class="btn btn-primary btn-lg"
+                        <a href="{{ neuron.doc_url }}" class="btn btn-primary btn-lg"
                             type="button">
                             <span class="glyphicon glyphicon-book"></span>
                             </a>
                     </td>
                     <td class="vert-align">
+                        {% if neuron.demo_url %}
                         <a href="" class="btn btn-info btn-lg" type="button">
                             <span class="glyphicon glyphicon-camera"></span>
                         </a>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
