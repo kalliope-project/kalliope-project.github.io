@@ -48,6 +48,6 @@
 
 - name: URI
   description: Interacts with HTTP and HTTPS web services
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/systemdate
+  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/uri
   logo: uri.png
   demo_url:

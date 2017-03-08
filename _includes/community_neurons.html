@@ -1,0 +1,44 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Community neurons</h3>
+    </div>
+    <div class="panel-body">
+        <p>Community neurons can be installed to complete your collection. See the <a href="https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/Docs/neuron_list.md">neuron installation documentation</a>.<br>
+            Wanna add your own neuron in this list? Fork this priejct page and send us a pull request !. See the <a href="https://github.com/kalliope-project/kalliope-project.github.io" >readme for more information</a>.</p>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td class="col-md-1"><strong>Logo</strong></td>
+                    <td class="col-md-2"><strong>Neuron name</strong></td>
+                    <td class="col-md-7"><strong>Description</strong></td>
+                    <td class="col-md-1"><strong>Doc</strong></td>
+                    <td class="col-md-1"><strong>Examples</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for neuron in include.neurons %}
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/{{ neuron.logo }}" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">{{ neuron.name }}</td>
+                    <td class="vert-align">{{ neuron.description }}</td>
+                    <td class="vert-align">
+                        <a href="{{ neuron.doc_url }}" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                            </a>
+                    </td>
+                    <td class="vert-align">
+                        {% if neuron.demo_url %}
+                        <a href="" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-camera"></span>
+                        </a>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
