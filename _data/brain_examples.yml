@@ -1,0 +1,9 @@
+- title: "Démo FR"
+  description: "Une démo de quelque neurones"
+  video_url: "https://www.youtube.com/embed/t4J42yO2rkM"
+  git_repo: "https://github.com/kalliope-project/kalliope"
+
+- title: "Demo EN"
+  description: "Simple demo in english"
+  video_url: "https://www.youtube.com/embed/PcLzo4H18S4"
+  git_repo: "https://github.com/kalliope-project/kalliope"

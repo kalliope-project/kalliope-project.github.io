@@ -1,0 +1,45 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    {% for brain_example in site.data.brain_examples %}
+    <div class="well">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>{{ brain_example.title }}</h2>
+                <p>{{ brain_example.description }}</p>
+                <a href="{{ brain_example.git_repo }}" class="btn btn-raised btn-primary">
+                    Repository<div class="ripple-container"></div>
+                </a>
+
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="{{ brain_example.video_url }}"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+
+    <!--<div class="well">
+        <h2 class="text-primary">Select a language</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a type="button" class="btn btn-default btn-lg" href="/brain_examples/french/french_brain_examples.html">
+                    <span class="flag-icon flag-icon-fr"></span> French examples
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a type="button" class="btn btn-default btn-lg" href="/brain_examples/english/english_brain_examples.html">
+                    <span class="flag-icon flag-icon-gb"></span> English examples
+                </a>
+            </div>
+        </div>
+    </div>-->
+</div>
+{% include footer.html %}

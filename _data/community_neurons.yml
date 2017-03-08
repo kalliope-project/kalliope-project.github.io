@@ -8,32 +8,32 @@
   description: Get the number of unread email and their subjects from a gmail account
   doc_url: https://github.com/kalliope-project/kalliope_neuron_gmail
   logo: gmail.png
-  demo_url: 
+  demo_url:
 
 - name: Google agenda
   description: Get your next meetings on google calendar
   doc_url: https://github.com/bacardi55/kalliope-google-calendar
   logo: google-calendar.png
-  demo_url:  
+  demo_url:
 
 - name: Google maps
   description: Get address / distance / time / directions from Google maps
   doc_url: https://github.com/bacardi55/kalliope-gmaps
   logo: google-maps.png
-  demo_url: 
+  demo_url:
 
 - name: HUE
   description: Control the Philips Hue lighting system
   doc_url: https://github.com/bacardi55/kalliope-gmaps
   logo: hue.png
-  demo_url: 
-  
+  demo_url:
+
 - name: List available orders
   description: Let kalliope tell you what she how she can help
   doc_url: https://github.com/bacardi55/kalliope-list-available-orders
   logo: question-icon.png
   demo_url:
-  
+
 - name: MPD
   description: Play music via an MPD server
   doc_url: https://github.com/bacardi55/kalliope-mpd
@@ -74,13 +74,13 @@
   description: Post and Read message on Slack
   doc_url: https://github.com/kalliope-project/kalliope_neuron_slack
   logo: slack.png
-  demo_url: 
+  demo_url:
 
 - name: System status
   description: Get info about the system (cpu, memory, …)
   doc_url: https://github.com/bacardi55/kalliope-system-status
   logo: hardware_info.png
-  demo_url:  
+  demo_url:
 
 - name: Tasker
   description: Send a message to Android tasker app
@@ -98,6 +98,12 @@
   description: Send a Twit from kalliope
   doc_url: https://github.com/kalliope-project/kalliope_neuron_twitter
   logo: twitter.png
+  demo_url:
+
+- name: Uber
+  description: Get time and price estimation for a uber ride
+  doc_url: https://github.com/bacardi55/kalliope-uber
+  logo: uber.png
   demo_url:
 
 - name: Wake on LAN
