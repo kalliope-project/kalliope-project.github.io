@@ -17,7 +17,7 @@ sudo gem install jekyll bundler
 
 Clone the project
 ```
-
+https://github.com/kalliope-project/kalliope-project.github.io.git
 ```
 
 Install libs
@@ -27,6 +27,6 @@ bundle install
 
 Run the dev server
 ```
-cd 
+cd
 jekyll serve --host=0.0.0.0
 ```
