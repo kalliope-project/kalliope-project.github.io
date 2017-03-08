@@ -17,7 +17,7 @@ sudo gem install jekyll bundler
 
 Clone the project
 ```
-https://github.com/kalliope-project/kalliope-project.github.io.git
+git clone https://github.com/kalliope-project/kalliope-project.github.io.git
 ```
 
 Install libs

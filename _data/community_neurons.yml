@@ -24,7 +24,7 @@
 
 - name: HUE
   description: Control the Philips Hue lighting system
-  doc_url: https://github.com/bacardi55/kalliope-gmaps
+  doc_url: https://github.com/kalliope-project/kalliope_neuron_hue
   logo: hue.png
   demo_url:
 
