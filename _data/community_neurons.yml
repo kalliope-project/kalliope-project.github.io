@@ -28,6 +28,12 @@
   logo: hue.png
   demo_url:
 
+- name: LoxSControl
+  description: Control Loxone home automation system
+  doc_url: https://github.com/andweber/kalliope_neuron_loxscontrol
+  logo: loxscontrol.png
+  demo_url:
+
 - name: List available orders
   description: Let kalliope tell you what she how she can help
   doc_url: https://github.com/bacardi55/kalliope-list-available-orders
