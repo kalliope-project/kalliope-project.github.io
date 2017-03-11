@@ -6,48 +6,48 @@
 
 - name: Kill switch
   description: Stop Kalliope process
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/kill_switch
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/kill_switch
   logo: kill_switch.png
   demo_url:
 
 - name: Neurotransmitter
   description: Link synapses together
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/neurotransmitter
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
   logo: neurotransmitter.png
   demo_url:
 
 - name: Say
   description: Make Kalliope talk by using TTS
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/say
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say
   logo: say.png
   demo_url:
 
 - name: Script
   description: Run an executable script
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/script
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/script
   logo: script.png
   demo_url:
 
 - name: Shell
   description: Run a shell command
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/shell
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/shell
   logo: shell.png
   demo_url:
 
 - name: Sleep
   description: Make Kalliope sleep for a while before continuing
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/sleep
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/sleep
   logo: sleep.png
   demo_url:
 
 - name: System date
   description: Give the local system date and time
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/systemdate
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/systemdate
   logo: time.png
   demo_url:
 
 - name: URI
   description: Interacts with HTTP and HTTPS web services
-  doc_url: https://github.com/kalliope-project/kalliope/blob/fix_neurotransmitter/kalliope/neurons/uri
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/uri
   logo: uri.png
   demo_url:
