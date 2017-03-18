@@ -1,0 +1,11 @@
+#{% raw %}
+- name: "check-email"
+  signals:
+    - order: "est-ce que j'ai des emails?"
+    - order: "quels sont mes emails?"
+  neurons:
+    - gmail_checker:
+        username: "{{gmail_login}}"
+        password: "{{gmil_password}}"
+        file_template: "templates/gmail.j2"
+#{% endraw %}

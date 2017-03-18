@@ -1,0 +1,20 @@
+#{% raw %}
+
+- name: "say-hello-fr"
+  signals:
+    - order: "bonjour"
+  neurons:
+    - say:
+        message:
+          - "Bonjour {{name}}"
+
+- name: "random"
+  signals:
+    - order: "dis-moi quelque-chose de façon aléatoire"
+    - order: "dis-moi quelque chose de façon aléatoire"
+  neurons:
+    - say:
+        message:
+          - "je choisis de dire le message 1"
+          - "je choisis de dire le message 2"
+#{% endraw %}

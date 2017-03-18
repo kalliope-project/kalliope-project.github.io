@@ -1,0 +1,30 @@
+#{% raw %}
+
+- name: "Uber-time-estimate-by-address"
+  signals:
+    - order: "temps d'attente pour 1 chauffeurs"
+    - order: "temps d'attente pour un chauffeurs"
+    - order: "Combien de temps d'attente pour un chauffeur"
+  neurons:
+    - uber:
+        uber_api_key: "{{uber_api_key}}"
+        gmaps_api_key: "{{gmaps_api_key}}"
+        start_address: "{{home_address}}"
+        driving_mode: "uberX"
+        say_template:
+            - "Un chauffeur {{driving_mode}} peut arriver d'ici {{ time_to_get_driver }} minutes"
+
+- name: "Uber-time-and-price-by-addresses"
+  signals:
+    - order: "prix d'un chauffeur pour aller à {{end_address}}"
+    - order: "prix d' un chauffeur pour aller à {{end_address}}"
+  neurons:
+    - uber:
+        uber_api_key: "{{uber_api_key}}"
+        gmaps_api_key: "{{gmaps_api_key}}"
+        start_address: "{{home_address}}"
+        driving_mode: "uberX"
+        say_template: "Le trajet en {{driving_mode}} prendra {{ride.duration}} minutes et coutera entre {{ride.low_estimate}} et {{ride.high_estimate}} euros. Un chauffeur peut arriver d'ici {{ time_to_get_driver }} minutes. "
+        args:
+            - end_address
+#{% endraw %}

@@ -1,0 +1,12 @@
+#{% raw %}
+{% if unread|int() == 0 %}
+Vous n'avez pas d'email
+{% else %}
+Vous avez {{ unread }} d'email
+{% set count = 1 %}
+{% for subject in subjects %}
+     email {{ count }}. {{ subject }}
+     {% set count = count + 1 %}
+    {% endfor %}
+{% endif %}
+#{% endraw %}

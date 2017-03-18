@@ -1,53 +1,61 @@
-- name: Ansible Playbook
+- neuron_name: Ansible Playbook
   description: Run an ansible playbook
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/ansible_playbook
   logo: Ansible_logo.png
-  demo_url:
+  demos:
 
-- name: Kill switch
+- neuron_name: Kill switch
   description: Stop Kalliope process
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/kill_switch
   logo: kill_switch.png
-  demo_url:
+  demos:
 
-- name: Neurotransmitter
+- neuron_name: Neurotransmitter
   description: Link synapses together
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
   logo: neurotransmitter.png
-  demo_url:
+  demos:
+    - demo_url: https://www.youtube.com/embed/pnb1knix004
+      synapse: fr_synapse.yml
 
-- name: Say
+- neuron_name: Say
   description: Make Kalliope talk by using TTS
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say
   logo: say.png
-  demo_url:
+  demos:
+    - demo_url: https://www.youtube.com/embed/pnb1knix004
+      synapse: fr_synapse.yml
 
-- name: Script
+
+- neuron_name: Script
   description: Run an executable script
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/script
   logo: script.png
-  demo_url:
+  demos:
 
-- name: Shell
+- neuron_name: Shell
   description: Run a shell command
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/shell
   logo: shell.png
-  demo_url:
+  demos:
 
-- name: Sleep
+- neuron_name: Sleep
   description: Make Kalliope sleep for a while before continuing
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/sleep
   logo: sleep.png
-  demo_url:
+  demos:
 
-- name: System date
+- neuron_name: Systemdate
   description: Give the local system date and time
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/systemdate
   logo: time.png
-  demo_url:
+  demos:
+    - demo_url: https://www.youtube.com/embed/pnb1knix004
+      synapse: fr_synapse.yml
+      template: fr_gouter_template.j2
 
-- name: URI
+- neuron_name: URI
   description: Interacts with HTTP and HTTPS web services
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/uri
   logo: uri.png
-  demo_url:
+  demos:

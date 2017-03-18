@@ -20,18 +20,18 @@
                     <td class="vert-align text-primary text-center">
                         <img class="circle" src="/images/{{ neuron.logo }}" width="50" height="50">
                     </td>
-                    <td class="vert-align text-primary">{{ neuron.name }}</td>
+                    <td class="vert-align text-primary">{{ neuron.neuron_name }}</td>
                     <td class="vert-align">{{ neuron.description }}</td>
                     <td class="vert-align">
                         <a href="{{ neuron.doc_url }}" class="btn btn-primary btn-lg"
                             type="button">
                             <span class="glyphicon glyphicon-book"></span>
-                            </a>
+                        </a>
                     </td>
                     <td class="vert-align">
-                        {% if neuron.demo_url %}
-                        <a href="" class="btn btn-info btn-lg" type="button">
-                            <span class="glyphicon glyphicon-camera"></span>
+                        {% if neuron.demos %}
+                        <a href="{{ neuron.neuron_name | datapage_url: 'neurons' }}" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
                         </a>
                         {% endif %}
                     </td>

@@ -1,132 +1,137 @@
-- name: Facebook
+- neuron_name: Facebook
   description: Post and Read message on Facebook
   doc_url: https://github.com/kalliope-project/kalliope_neuron_facebook
   logo: facebook.png
-  demo_url:
+  demos:
 
-- name: Gmail
+- neuron_name: Gmail
   description: Get the number of unread email and their subjects from a gmail account
   doc_url: https://github.com/kalliope-project/kalliope_neuron_gmail
   logo: gmail.png
-  demo_url:
+  demos:
+    - demo_url: https://www.youtube.com/embed/pnb1knix004
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
-- name: Google agenda
+- neuron_name: Google agenda
   description: Get your next meetings on google calendar
   doc_url: https://github.com/bacardi55/kalliope-google-calendar
   logo: google-calendar.png
-  demo_url:
+  demos:
 
-- name: Google maps
+- neuron_name: Google maps
   description: Get address / distance / time / directions from Google maps
   doc_url: https://github.com/bacardi55/kalliope-gmaps
   logo: google-maps.png
-  demo_url:
+  demos:
 
-- name: HUE
+- neuron_name: HUE
   description: Control the Philips Hue lighting system
   doc_url: https://github.com/kalliope-project/kalliope_neuron_hue
   logo: hue.png
-  demo_url:
+  demos:
 
-- name: LoxSControl
+- neuron_name: LoxSControl
   description: Control Loxone home automation system
   doc_url: https://github.com/andweber/kalliope_neuron_loxscontrol
   logo: loxscontrol.png
-  demo_url:
+  demos:
 
-- name: List available orders
+- neuron_name: List available orders
   description: Let kalliope tell you what she how she can help
   doc_url: https://github.com/bacardi55/kalliope-list-available-orders
   logo: question-icon.png
-  demo_url:
+  demos:
 
-- name: MPD
+- neuron_name: MPD
   description: Play music via an MPD server
   doc_url: https://github.com/bacardi55/kalliope-mpd
   logo: cloud-music.png
-  demo_url:
+  demos:
 
-- name: Openweathermap
+- neuron_name: Openweathermap
   description: Get the weather of a location
   doc_url: https://github.com/kalliope-project/kalliope_neuron_openweathermap
   logo: openweathermap.png
-  demo_url:
+  demos:
 
-- name: Pi camera
+- neuron_name: Pi camera
   description: Take picture with your picamera
   doc_url: https://github.com/bacardi55/kalliope-picamera
   logo: pi-camera.png
-  demo_url:
+  demos:
 
-- name: Pushetta
+- neuron_name: Pushetta
   description: Send a push message to a remote device like Android/iOS/Windows Phone or Chrome browser
   doc_url: https://github.com/kalliope-project/kalliope_neuron_pushetta
   logo: pushetta.png
-  demo_url:
+  demos:
 
-- name: Repeat
+- neuron_name: Repeat
   description: Make Kalliope say whatever you want
   doc_url: https://github.com/bacardi55/kalliope-repeat
   logo: repeat.png
-  demo_url:
+  demos:
 
-- name: RSS reader
+- neuron_name: RSS reader
   description: Get rss feed from website
   doc_url: https://github.com/kalliope-project/kalliope_neuron_rss_reader
   logo: rss.png
-  demo_url:
+  demos:
 
-- name: Slack
+- neuron_name: Slack
   description: Post and Read message on Slack
   doc_url: https://github.com/kalliope-project/kalliope_neuron_slack
   logo: slack.png
-  demo_url:
+  demos:
 
-- name: System status
+- neuron_name: System status
   description: Get info about the system (cpu, memory, …)
   doc_url: https://github.com/bacardi55/kalliope-system-status
   logo: hardware_info.png
-  demo_url:
+  demos:
 
-- name: Tasker
+- neuron_name: Tasker
   description: Send a message to Android tasker app
   doc_url: https://github.com/kalliope-project/kalliope_neuron_tasker
   logo: tasker.png
-  demo_url:
+  demos:
 
-- name: Todotxt
+- neuron_name: Todotxt
   description: Manage a todo list (based on self hosted todotxt app) via Kalliope
   doc_url: https://github.com/bacardi55/kalliope-todotxt
   logo: todo.png
-  demo_url:
+  demos:
 
-- name: Twitter
+- neuron_name: Twitter
   description: Send a Twit from kalliope
   doc_url: https://github.com/kalliope-project/kalliope_neuron_twitter
   logo: twitter.png
-  demo_url:
+  demos:
 
-- name: Uber
+- neuron_name: Uber
   description: Get time and price estimation for a uber ride
   doc_url: https://github.com/bacardi55/kalliope-uber
   logo: uber.png
-  demo_url:
+  demos:
+    - demo_url: https://www.youtube.com/embed/pnb1knix004
+      synapse: fr_synapse.yml
 
-- name: Wake on LAN
+- neuron_name: Wake on LAN
   description: Wake on lan a computer
   doc_url: https://github.com/kalliope-project/kalliope_neuron_wake_on_lan
   logo: wol.png
-  demo_url:
+  demos:
 
-- name: Web scraper
+- neuron_name: Web scraper
   description: Read web pages that don't provide RSS feed or APIs (by scraping html)
   doc_url: https://github.com/bacardi55/kalliope-web-scraper
   logo: web-scraper.png
-  demo_url:
+  demos:
 
-- name: Wikipedia
+- neuron_name: Wikipedia
   description: Search for a page on Wikipedia
   doc_url: https://github.com/kalliope-project/kalliope_neuron_wikipedia
   logo: wikipedia.png
-  demo_url:
+  demos:
 

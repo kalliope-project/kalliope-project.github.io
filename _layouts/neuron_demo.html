@@ -1,0 +1,30 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+
+    <h1 class="text-primary">{{page.neuron_name}}</h1>
+    {% for demo in page.demos %}
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        {% highlight yaml %}
+            {% include neuron_examples/{{page.neuron_name}}/{{demo.synapse}} %}
+        {% endhighlight %}
+
+        {% if demo.template %}
+        <h3 class="text-primary">Template</h3>
+        {% highlight jinja %}
+            {% include neuron_examples/{{page.neuron_name}}/{{demo.template}} %}
+        {% endhighlight %}
+        {% endif %}
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="{{ demo.demo_url }}"></iframe>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% include footer.html %}
