@@ -1,6 +1,6 @@
 # kalliope.github.io
 
-This is the code of the front store of Kalliope on [kalliope.github.io](kalliope.github.io).
+This is the code of the front store of Kalliope on [kalliope.github.io](https://kalliope-project.github.io/).
 The web site is generated with [jekyll](https://jekyllrb.com/).
 
 This repository contains the code of the static website.
