@@ -1,0 +1,45 @@
+#{% raw %}
+---
+  - name: "Get-shopping-list"
+    signals:
+      - order: "list de course"
+      - order: "list de courses"
+      - order: "list des courses"
+      - order: "list des course"
+      - order: "liste de course"
+      - order: "liste de courses"
+      - order: "listes de courses"
+    neurons:
+      - todotxt:
+          action: "get"
+          todotxt_file: "{{todofile}}"
+          project: "courses"
+          file_template: "templates/fr_todotxt.j2"
+
+  - name: "add-item-to-shopping-list"
+    signals:
+      - order: "penser à acheter {{content}}"
+      - order: "pensé à acheté {{content}}"
+      - order: "pensé à acheter {{content}}"
+      - order: "penser à acheté {{content}}"
+    neurons:
+      - todotxt:
+          action: "add"
+          todotxt_file: "{{todofile}}"
+          project: "courses"
+          args:
+             - content
+          say_template: "J'ai ajouté {{added_task.task}} a la liste des courses"
+
+  - name: "delete-shopping-list"
+    signals:
+      - order: "supprimer la liste"
+      - order: "supprime la liste"
+    neurons:
+      - todotxt:
+          action: "del"
+          todotxt_file: "{{todofile}}"
+          project: "courses"
+          say_template: "J'ai vidé la liste de course"
+
+#{% endraw %}

@@ -15,7 +15,7 @@
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
   logo: neurotransmitter.png
   demos:
-    - demo_url: https://www.youtube.com/embed/pnb1knix004
+    - demo_url: https://www.youtube.com/embed/IR9hYo3m6OU
       synapse: fr_synapse.yml
 
 - neuron_name: Say
@@ -23,7 +23,7 @@
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say
   logo: say.png
   demos:
-    - demo_url: https://www.youtube.com/embed/pnb1knix004
+    - demo_url: https://www.youtube.com/embed/Eo4dg5oOgHI
       synapse: fr_synapse.yml
 
 
@@ -50,7 +50,7 @@
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/systemdate
   logo: time.png
   demos:
-    - demo_url: https://www.youtube.com/embed/pnb1knix004
+    - demo_url: https://www.youtube.com/embed/sNSuQK_SO0w
       synapse: fr_synapse.yml
       template: fr_gouter_template.j2
 

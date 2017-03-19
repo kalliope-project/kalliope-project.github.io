@@ -9,7 +9,7 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_gmail
   logo: gmail.png
   demos:
-    - demo_url: https://www.youtube.com/embed/pnb1knix004
+    - demo_url: https://www.youtube.com/embed/eYM-T_qgN60
       synapse: fr_synapse.yml
       template: fr_template.j2
 
@@ -19,11 +19,14 @@
   logo: google-calendar.png
   demos:
 
-- neuron_name: Google maps
+- neuron_name: Gmaps
   description: Get address / distance / time / directions from Google maps
   doc_url: https://github.com/bacardi55/kalliope-gmaps
   logo: google-maps.png
   demos:
+    - demo_url: https://www.youtube.com/embed/l8pi3Puzliw?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: HUE
   description: Control the Philips Hue lighting system
@@ -48,6 +51,8 @@
   doc_url: https://github.com/bacardi55/kalliope-mpd
   logo: cloud-music.png
   demos:
+    - demo_url: https://www.youtube.com/embed/Zdn7CUQlV1E?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
+      synapse: fr_synapse.yml
 
 - neuron_name: Openweathermap
   description: Get the weather of a location
@@ -102,6 +107,8 @@
   doc_url: https://github.com/bacardi55/kalliope-todotxt
   logo: todo.png
   demos:
+    - demo_url: https://www.youtube.com/embed/DLmaspBVd2A?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
+      synapse: fr_synapse.yml
 
 - neuron_name: Twitter
   description: Send a Twit from kalliope
@@ -134,4 +141,7 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_wikipedia
   logo: wikipedia.png
   demos:
+    - demo_url: https://www.youtube.com/embed/bdLgRfMGFos
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 

@@ -1,0 +1,45 @@
+#{% raw %}
+- name: "Gmaps-distance"
+  signals:
+    - order: "distance entre {{origin}} et {{destination}}"
+  neurons:
+    - gmaps:
+        gmaps_api_key: "{{gmaps_api_key}}"
+        mode: "driving"
+        language: "fr"
+        units: "metric"
+        traffic_model: "pessimistic"
+        args:
+          - origin
+          - destination
+        file_template: "templates/fr_gmaps.j2"
+
+- name: "Gmaps-place-address"
+  signals:
+    - order: "adresse de {{search}}"
+    - order: "adresses de {{search}}"
+  neurons:
+    - gmaps:
+        gmaps_api_key: "{{gmaps_api_key}}"
+        language: "fr"
+        units: "metric"
+        args:
+          - search
+        file_template: "templates/fr_gmaps.j2"
+
+- name: "Gmaps-direction"
+  signals:
+    - order: "direction entre {{origin}} et {{destination}}"
+  neurons:
+    - gmaps:
+        gmaps_api_key: "{{gmaps_api_key}}"
+        direction: True
+        mode: "transit"
+        language: "fr"
+        units: "metric"
+        direction: "True"
+        file_template: "templates/fr_gmaps.j2"
+        args:
+            - origin
+            - destination
+#{% endraw %}

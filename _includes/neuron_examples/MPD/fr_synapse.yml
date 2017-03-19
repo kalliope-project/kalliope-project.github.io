@@ -1,0 +1,106 @@
+#{% raw %}
+---
+  - name: "play-music-hiphop"
+    signals:
+      - order: "mets de la bonne musique"
+      - order: "bonne musique"
+      - order: "bonnes musiques"
+    neurons:
+      - kalliopempd:
+          mpd_action: "playlist"
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_random: 1
+          mpd_volume: 33
+          query: "HipHop"
+
+  - name: "search-fashion-music"
+    signals:
+      - order: "Mets de la musique à la mode"
+      - order: "musique du moment"
+      - order: "meilleur music du moment"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "playlist_spotify"
+          mpd_random: 0
+          mpd_volume: 33
+          query: "Spotify/Top tracks/Global"
+
+  - name: "play-toggle"
+    signals:
+      - order: "mets la musique en pause"
+      - order: "pause la musique"
+      - order: "poses la musique"
+      - order: "pose la musique"
+      - order: "enlève pause"
+      - order: "enlèves pose"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "toggle_play"
+          mpd_random: 1
+          mpd_volume: 33
+
+  - name: "play-next"
+    signals:
+      - order: "chanson suivante"
+      - order: "chansons suivantes"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "play_next"
+          mpd_volume: 33
+
+  - name: "play-previous"
+    signals:
+      - order: "chanson précédente"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "play_previous"
+          mpd_volume: 33
+
+  - name: "play-stop"
+    signals:
+      - order: "stop la musique"
+      - order: "stoppe la musique"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "play_stop"
+          mpd_volume: 33
+
+  - name: "search-music"
+    signals:
+      - order: "mets de la musique de {{query}}"
+      - order: "cherche de la musique de {{query}}"
+      - order: "cherche de la musiques de {{query}}"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "search"
+          mpd_random: 0
+          mpd_volume: 33
+          args:
+            - query
+
+  - name: "play-radio-voltage"
+    signals:
+      - order: "radio voltage"
+    neurons:
+      - kalliopempd:
+          mpd_url: "{{mpd_url}}"
+          mpd_port: "{{mpd_port}}"
+          mpd_action: "file"
+          mpd_random: 0
+          query: "tunein:station:s25257"
+          mpd_volume: 33
+
+#{% endraw %}
