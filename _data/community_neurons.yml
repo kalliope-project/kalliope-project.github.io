@@ -83,11 +83,14 @@
   logo: repeat.png
   demos:
 
-- neuron_name: RSS reader
+- neuron_name: RSS_reader
   description: Get rss feed from website
   doc_url: https://github.com/kalliope-project/kalliope_neuron_rss_reader
   logo: rss.png
   demos:
+    - demo_url: https://www.youtube.com/embed/BBaO8YVmcbc
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: Slack
   description: Post and Read message on Slack
@@ -119,7 +122,7 @@
       synapse: fr_synapse.yml
 
 - neuron_name: Twitter
-  description: Send a Twit from kalliope
+  description: Send a Tweet from kalliope
   doc_url: https://github.com/kalliope-project/kalliope_neuron_twitter
   logo: twitter.png
   demos:
