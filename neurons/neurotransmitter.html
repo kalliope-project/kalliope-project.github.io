@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neurotransmitter</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
+                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Neurotransmitter</h1>
+        <p>Link synapses together</p>
+        <p><a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Neuron documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse1"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">une</span><span class="nv"> </span><span class="s">question"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">aimez</span><span class="nv"> </span><span class="s">vous</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites?"</span>
+    <span class="pi">-</span> <span class="s">neurotransmitter</span><span class="pi">:</span>
+        <span class="s">from_answer_link</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+            <span class="s">answers</span><span class="pi">:</span>
+              <span class="pi">-</span> <span class="s2">"</span><span class="s">énormément"</span>
+              <span class="pi">-</span> <span class="s2">"</span><span class="s">peut-être"</span>
+          <span class="pi">-</span> <span class="s">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+            <span class="s">answers</span><span class="pi">:</span>
+              <span class="pi">-</span> <span class="s2">"</span><span class="s">pas</span><span class="nv"> </span><span class="s">du</span><span class="nv"> </span><span class="s">tout"</span>
+              <span class="pi">-</span> <span class="s2">"</span><span class="s">non</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">vraiment"</span>
+        <span class="s">default</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vous</span><span class="nv"> </span><span class="s">aimez</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites!</span><span class="nv"> </span><span class="s">Moi</span><span class="nv"> </span><span class="s">aussi!"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">vous</span><span class="nv"> </span><span class="s">n'aimez</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites.</span><span class="nv"> </span><span class="s">c'est</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">grave."</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Je</span><span class="nv"> </span><span class="s">n'ai</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">compris</span><span class="nv"> </span><span class="s">votre</span><span class="nv"> </span><span class="s">réponse"</span>
+<span class="c1">#</span>
+        </code></pre></figure>
+
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IR9hYo3m6OU"></iframe>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

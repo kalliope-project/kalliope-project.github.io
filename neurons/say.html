@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Say</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
+                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Say</h1>
+        <p>Make Kalliope talk by using TTS</p>
+        <p><a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Neuron documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">say-hello-fr"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">bonjour"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">Bonjour</span><span class="nv"> </span><span class="s">{{name}}"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">random"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dis-moi</span><span class="nv"> </span><span class="s">quelque-chose</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">façon</span><span class="nv"> </span><span class="s">aléatoire"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dis-moi</span><span class="nv"> </span><span class="s">quelque</span><span class="nv"> </span><span class="s">chose</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">façon</span><span class="nv"> </span><span class="s">aléatoire"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">je</span><span class="nv"> </span><span class="s">choisis</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">dire</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">1"</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">je</span><span class="nv"> </span><span class="s">choisis</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">dire</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">2"</span>
+<span class="c1">#</span>
+        </code></pre></figure>
+
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Eo4dg5oOgHI"></iframe>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gmaps</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
+                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Gmaps</h1>
+        <p>Get address / distance / time / directions from Google maps</p>
+        <p><a href="https://github.com/bacardi55/kalliope-gmaps" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Neuron documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Gmaps-distance"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">distance</span><span class="nv"> </span><span class="s">entre</span><span class="nv"> </span><span class="s">{{origin}}</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">{{destination}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gmaps</span><span class="pi">:</span>
+        <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
+        <span class="s">mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">driving"</span>
+        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
+        <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
+        <span class="s">traffic_model</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pessimistic"</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">origin</span>
+          <span class="pi">-</span> <span class="s">destination</span>
+        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Gmaps-place-address"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">adresse</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">{{search}}"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">adresses</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">{{search}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gmaps</span><span class="pi">:</span>
+        <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
+        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
+        <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">search</span>
+        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Gmaps-direction"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">direction</span><span class="nv"> </span><span class="s">entre</span><span class="nv"> </span><span class="s">{{origin}}</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">{{destination}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gmaps</span><span class="pi">:</span>
+        <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
+        <span class="s">direction</span><span class="pi">:</span> <span class="s">True</span>
+        <span class="s">mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">transit"</span>
+        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
+        <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
+        <span class="s">direction</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True"</span>
+        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
+        <span class="s">args</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">origin</span>
+            <span class="pi">-</span> <span class="s">destination</span>
+<span class="c1">#</span>
+
+        </code></pre></figure>
+
+        
+        <h3 class="text-primary">Template</h3>
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+<span class="cp">{%</span> <span class="k">if</span> <span class="nv">status</span> <span class="o">==</span> <span class="s2">"KO"</span> <span class="cp">%}</span>
+    Désolé monsieur, mais une erreur est survenu lors du calcul.
+<span class="cp">{%</span> <span class="nv">elif</span> <span class="nv">status</span> <span class="o">==</span> <span class="s2">"OK"</span> <span class="cp">%}</span>
+    <span class="cp">{%</span> <span class="k">if</span> <span class="nv">search</span> <span class="cp">%}</span>
+        <span class="cp">{%</span> <span class="k">if</span> <span class="nv">origin</span> <span class="cp">%}</span>
+	    La distance entre <span class="cp">{{</span> <span class="nv">origin</span> <span class="cp">}}</span> et <span class="cp">{{</span> <span class="nv">search</span> <span class="cp">}}</span> est de <span class="cp">{{</span> <span class="nv">distance</span> <span class="cp">}}</span>.
+            Il faut environ <span class="cp">{{</span> <span class="nv">time</span> <span class="cp">}}</span> pour y aller
+            <span class="cp">{%</span> <span class="k">if</span> <span class="nv">time_traffic</span> <span class="cp">%}</span>
+                Il faut prévoir <span class="cp">{{</span> <span class="nv">time_traffic</span> <span class="cp">}}</span> avec le traffic actuel.
+            <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+        <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+            L'addresse de <span class="cp">{{</span> <span class="nv">search</span> <span class="cp">}}</span> est <span class="cp">{{</span><span class="nv">destination</span><span class="cp">}}</span>
+        <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+    <span class="cp">{%</span> <span class="nv">elif</span> <span class="nv">destination</span> <span class="cp">%}</span>
+        La distance entre <span class="cp">{{</span> <span class="nv">origin</span> <span class="cp">}}</span> et <span class="cp">{{</span> <span class="nv">destination</span> <span class="cp">}}</span> est de <span class="cp">{{</span> <span class="nv">distance</span> <span class="cp">}}</span>.
+        Il faut environ <span class="cp">{{</span> <span class="nv">time</span> <span class="cp">}}</span> pour y aller
+        <span class="cp">{%</span> <span class="k">if</span> <span class="nv">time_traffic</span> <span class="cp">%}</span>
+          Il faut prévoir <span class="cp">{{</span> <span class="nv">time_traffic</span> <span class="cp">}}</span> avec le traffic actuel.
+        <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+    <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+
+    <span class="cp">{%</span> <span class="k">if</span> <span class="nv">directions</span> <span class="cp">%}</span>
+        Pour se rendre à <span class="cp">{{</span><span class="nv">destination</span><span class="cp">}}</span>, il faut       :
+        <span class="cp">{%</span> <span class="k">for</span> <span class="nv">direction</span> <span class="ow">in</span> <span class="nv">directions</span> <span class="cp">%}</span>
+            <span class="cp">{{</span> <span class="nv">direction</span> <span class="cp">}}</span>
+        <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+    <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+#
+        </code></pre></figure>
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l8pi3Puzliw?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi"></iframe>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
