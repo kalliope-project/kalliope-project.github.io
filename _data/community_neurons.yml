@@ -3,6 +3,9 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_facebook
   logo: facebook.png
   demos:
+    - demo_url: https://www.youtube.com/embed/AzNIgpTC9YU
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: Gmail
   description: Get the number of unread email and their subjects from a gmail account
@@ -59,6 +62,8 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_openweathermap
   logo: openweathermap.png
   demos:
+    - demo_url: https://www.youtube.com/embed/bdkUbggnLuk
+      synapse: fr_synapse.yml
 
 - neuron_name: Pi camera
   description: Take picture with your picamera
@@ -89,6 +94,9 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_slack
   logo: slack.png
   demos:
+    - demo_url: https://www.youtube.com/embed/x4HGn2RGc30
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: System status
   description: Get info about the system (cpu, memory, …)
@@ -115,6 +123,8 @@
   doc_url: https://github.com/kalliope-project/kalliope_neuron_twitter
   logo: twitter.png
   demos:
+    - demo_url: https://www.youtube.com/embed/--aG1VyFCS0
+      synapse: fr_synapse.yml
 
 - neuron_name: Uber
   description: Get time and price estimation for a uber ride

@@ -1,0 +1,37 @@
+#{% raw %}
+- name: "post-slack"
+  neurons:
+    - slack:
+        action: "POST"
+        slack_token: "{{slack_token}}"
+        channel: "#fun"
+        args:
+          - message
+  signals:
+    - order: "envoi sur slack {{ message }}"
+    - order: "envoie sur slack {{ message }}"
+
+- name: "read-slack"
+  neurons:
+    - slack:
+        slack_token: "API"
+        action: "READ"
+        nb_messages: '3'
+        channel: "fun"
+        file_template: slack_template.j2
+  signals:
+    - order: "lis les messages sur slack"
+    - order: "lis les messages sur ce lac"
+    - order: "lis les message sur slack"
+    - order: "lis les message sur ce lac"
+
+- name: "users-slack"
+  neurons:
+    - slack:
+        action: USERS
+        slack_token: "{{slack_token}}"
+        file_template: slack_user_template.j2
+  signals:
+    - order: "Liste les utilisateurs connectés sur slack"
+    - order: "Liste les utilisateur connecté sur slack"
+#{% endraw %}

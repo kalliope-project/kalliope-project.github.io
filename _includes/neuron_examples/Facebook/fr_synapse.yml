@@ -1,0 +1,24 @@
+#{% raw %}
+- name: "read-facebook"
+  signals:
+    - order: "Quel est le dernier message de Omar Sy sur facebook"
+    - order: "Quel est le dernier message de Omar Sy sur facebook"
+    - order: "Quel est le dernier message de Omar Si sur facebook"
+  neurons:
+      - facebook_manager:
+            token: "{{fb_token}}"
+            action: "READ"
+            user_name: "{{fb_username}}"
+            nb_messages: '1'
+            file_template: facebook_template.j2
+
+- name: "post-facebook"
+  neurons:
+    - facebook_manager:
+        action: "POST"
+        token: "{{fb_token}}"
+        args:
+          - message
+  signals:
+    - order: "envoie sur facebook {{ message }}"
+#{% endraw %}

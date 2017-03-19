@@ -1,0 +1,18 @@
+#{% raw %}
+# slack_user_template.j2
+{% if members|length == 0 %}
+    Aucun utilisateur connecté
+{% else %}
+    {{ members|length }} utilisateurs connectés.
+    {% for member in members %}
+        {{ member.name }}
+    {% endfor %}
+{% endif %}
+
+# slack_template.j2
+{% for message in messages %}
+    {% for key, value in message.iteritems() %}
+        {{ key }} a dit {{ value }}
+    {% endfor %}
+{% endfor %}
+#{% endraw %}
