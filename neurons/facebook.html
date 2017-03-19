@@ -51,6 +51,50 @@
     </div>
 
     
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">read-facebook"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quel</span><span class="nv"> </span><span class="s">est</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">dernier</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">Omar</span><span class="nv"> </span><span class="s">Sy</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">facebook"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quel</span><span class="nv"> </span><span class="s">est</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">dernier</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">Omar</span><span class="nv"> </span><span class="s">Sy</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">facebook"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quel</span><span class="nv"> </span><span class="s">est</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">dernier</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">Omar</span><span class="nv"> </span><span class="s">Si</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">facebook"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">facebook_manager</span><span class="pi">:</span>
+            <span class="s">token</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{fb_token}}"</span>
+            <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">READ"</span>
+            <span class="s">user_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{fb_username}}"</span>
+            <span class="s">nb_messages</span><span class="pi">:</span> <span class="s1">'</span><span class="s">1'</span>
+            <span class="s">file_template</span><span class="pi">:</span> <span class="s">facebook_template.j2</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-facebook"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">facebook_manager</span><span class="pi">:</span>
+        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">POST"</span>
+        <span class="s">token</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{fb_token}}"</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">message</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">envoie</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">facebook</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">}}"</span>
+<span class="c1">#</span>
+        </code></pre></figure>
+
+        
+        <h3 class="text-primary">Template</h3>
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">post</span> <span class="ow">in</span> <span class="nv">posts</span> <span class="cp">%}</span>
+    <span class="cp">{{</span> <span class="nv">user_name</span> <span class="cp">}}</span> a écrit <span class="cp">{{</span> <span class="nv">post</span> <span class="cp">}}</span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+#
+        </code></pre></figure>
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AzNIgpTC9YU"></iframe>
+        </div>
+    </div>
+    
 </div>
 </body>
 </html>

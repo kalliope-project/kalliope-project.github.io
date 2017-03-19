@@ -51,6 +51,33 @@
     </div>
 
     
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">get-the-weather"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">quel</span><span class="nv"> </span><span class="s">temps</span><span class="nv"> </span><span class="s">fait-il</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{location}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">openweathermap</span><span class="pi">:</span>
+        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{owm_api}}"</span>
+        <span class="s">lang</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
+        <span class="s">temp_unit</span><span class="pi">:</span> <span class="s2">"</span><span class="s">celsius"</span>
+        <span class="s">country</span><span class="pi">:</span> <span class="s2">"</span><span class="s">FR"</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">location</span>
+        <span class="s">say_template</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s2">"</span><span class="s">Aujourd'hui</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">location</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">temps</span><span class="nv"> </span><span class="s">est</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">weather_today</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">avec</span><span class="nv"> </span><span class="s">une</span><span class="nv"> </span><span class="s">température</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">temp_today_temp</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">degrés</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">demain</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">temps</span><span class="nv"> </span><span class="s">sera</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">weather_tomorrow</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">avec</span><span class="nv"> </span><span class="s">une</span><span class="nv"> </span><span class="s">température</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">temp_tomorrow_temp</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">degrés"</span>
+<span class="c1">#</span>
+        </code></pre></figure>
+
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bdkUbggnLuk"></iframe>
+        </div>
+    </div>
+    
 </div>
 </body>
 </html>

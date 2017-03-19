@@ -51,6 +51,76 @@
     </div>
 
     
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-slack"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">slack</span><span class="pi">:</span>
+        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">POST"</span>
+        <span class="s">slack_token</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{slack_token}}"</span>
+        <span class="s">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">#fun"</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">message</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">envoi</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">}}"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">envoie</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">}}"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">read-slack"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">slack</span><span class="pi">:</span>
+        <span class="s">slack_token</span><span class="pi">:</span> <span class="s2">"</span><span class="s">API"</span>
+        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">READ"</span>
+        <span class="s">nb_messages</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>
+        <span class="s">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fun"</span>
+        <span class="s">file_template</span><span class="pi">:</span> <span class="s">slack_template.j2</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lis</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">messages</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lis</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">messages</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">lac"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lis</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lis</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">message</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">lac"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">users-slack"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">slack</span><span class="pi">:</span>
+        <span class="s">action</span><span class="pi">:</span> <span class="s">USERS</span>
+        <span class="s">slack_token</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{slack_token}}"</span>
+        <span class="s">file_template</span><span class="pi">:</span> <span class="s">slack_user_template.j2</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Liste</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">utilisateurs</span><span class="nv"> </span><span class="s">connectés</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Liste</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">utilisateur</span><span class="nv"> </span><span class="s">connecté</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
+<span class="c1">#</span>
+        </code></pre></figure>
+
+        
+        <h3 class="text-primary">Template</h3>
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+# slack_user_template.j2
+<span class="cp">{%</span> <span class="k">if</span> <span class="nv">members</span><span class="o">|</span><span class="nf">length</span> <span class="o">==</span> <span class="nv">0</span> <span class="cp">%}</span>
+    Aucun utilisateur connecté
+<span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+    <span class="cp">{{</span> <span class="nv">members</span><span class="o">|</span><span class="nf">length</span> <span class="cp">}}</span> utilisateurs connectés.
+    <span class="cp">{%</span> <span class="k">for</span> <span class="nv">member</span> <span class="ow">in</span> <span class="nv">members</span> <span class="cp">%}</span>
+        <span class="cp">{{</span> <span class="nv">member.name</span> <span class="cp">}}</span>
+    <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+
+# slack_template.j2
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">message</span> <span class="ow">in</span> <span class="nv">messages</span> <span class="cp">%}</span>
+    <span class="cp">{%</span> <span class="k">for</span> <span class="nv">key</span><span class="p">,</span> <span class="nv">value</span> <span class="ow">in</span> <span class="nv">message.iteritems</span><span class="p">()</span> <span class="cp">%}</span>
+        <span class="cp">{{</span> <span class="nv">key</span> <span class="cp">}}</span> a dit <span class="cp">{{</span> <span class="nv">value</span> <span class="cp">}}</span>
+    <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+#
+        </code></pre></figure>
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x4HGn2RGc30"></iframe>
+        </div>
+    </div>
+    
 </div>
 </body>
 </html>
