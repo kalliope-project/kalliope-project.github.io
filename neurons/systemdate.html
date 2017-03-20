@@ -37,8 +37,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
-                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+                <li ><a href="/brain_examples.html">Community brain examples</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
             </ul>
         </div>
     </div>
@@ -53,7 +53,7 @@
     
     <div class="well">
         <h3 class="text-primary">Synapse</h3>
-        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 
 <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">say-local-date"</span>
   <span class="s">signals</span><span class="pi">:</span>
@@ -71,18 +71,18 @@
   <span class="s">neurons</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">systemdate</span><span class="pi">:</span>
         <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/systemdate_template_gouter.j2"</span>
-<span class="c1">#</span>
+
         </code></pre></figure>
 
         
         <h3 class="text-primary">Template</h3>
-        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            
 <span class="cp">{%</span> <span class="k">if</span> <span class="nv">hours</span><span class="o">|</span><span class="nf">int</span><span class="p">()</span> <span class="ow">in</span> <span class="nv">range</span><span class="p">(</span><span class="nv">16</span><span class="p">,</span><span class="nv">17</span><span class="p">)</span> <span class="cp">%}</span>
 oui il est l'heure
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
 non pas encore
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
-#
+
         </code></pre></figure>
         
 

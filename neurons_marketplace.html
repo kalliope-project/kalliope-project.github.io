@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalliope</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/brain_examples.html">Community brain examples</a></li>
+                <li class="active"><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            Join the community and add your own videos to
+            <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/community_neurons.yml">
+            the list
+            </a>!
+        </p>
+    </div>
+    <!-- neuron core -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Core neurons</h3>
+    </div>
+    <div class="panel-body">
+        <p>Core neurons are included with the default installation of Kalliope.</p>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td class="col-md-1"><strong>Logo</strong></td>
+                    <td class="col-md-2"><strong>Neuron name</strong></td>
+                    <td class="col-md-7"><strong>Description</strong></td>
+                    <td class="col-md-1"><strong>Doc</strong></td>
+                    <td class="col-md-1"><strong>Examples</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/Ansible_logo.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Ansible Playbook</td>
+                    <td class="vert-align">Run an ansible playbook</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/ansible_playbook" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/kill_switch.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Kill switch</td>
+                    <td class="vert-align">Stop Kalliope process</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/kill_switch" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/neurotransmitter.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Neurotransmitter</td>
+                    <td class="vert-align">Link synapses together</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/neurotransmitter.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/say.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Say</td>
+                    <td class="vert-align">Make Kalliope talk by using TTS</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/say.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/script.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Script</td>
+                    <td class="vert-align">Run an executable script</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/script" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/shell.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Shell</td>
+                    <td class="vert-align">Run a shell command</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/shell" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/sleep.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Sleep</td>
+                    <td class="vert-align">Make Kalliope sleep for a while before continuing</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/sleep" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/time.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Systemdate</td>
+                    <td class="vert-align">Give the local system date and time</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/systemdate" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/systemdate.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/uri.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">URI</td>
+                    <td class="vert-align">Interacts with HTTP and HTTPS web services</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/uri" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <!-- neuron community -->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Community neurons</h3>
+    </div>
+    <div class="panel-body">
+        <p>Community neurons can be installed to complete your collection. See the <a href="https://github.com/kalliope-project/kalliope/blob/master/Docs/neuron_list.md">neuron installation documentation</a>.<br>
+            Wanna add your own neuron in this list? Fork this priejct page and send us a pull request !. See the <a href="https://github.com/kalliope-project/kalliope-project.github.io" >readme for more information</a>.</p>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td class="col-md-1"><strong>Logo</strong></td>
+                    <td class="col-md-2"><strong>Neuron name</strong></td>
+                    <td class="col-md-7"><strong>Description</strong></td>
+                    <td class="col-md-1"><strong>Doc</strong></td>
+                    <td class="col-md-1"><strong>Examples</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/facebook.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Facebook</td>
+                    <td class="vert-align">Post and Read message on Facebook</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_facebook" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/facebook.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/gmail.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Gmail</td>
+                    <td class="vert-align">Get the number of unread email and their subjects from a gmail account</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_gmail" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/gmail.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/google-calendar.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Google agenda</td>
+                    <td class="vert-align">Get your next meetings on google calendar</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-google-calendar" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/google-maps.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Gmaps</td>
+                    <td class="vert-align">Get address / distance / time / directions from Google maps</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-gmaps" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/gmaps.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/hue.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">HUE</td>
+                    <td class="vert-align">Control the Philips Hue lighting system</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_hue" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/loxscontrol.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">LoxSControl</td>
+                    <td class="vert-align">Control Loxone home automation system</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/andweber/kalliope_neuron_loxscontrol" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/question-icon.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">List available orders</td>
+                    <td class="vert-align">Let kalliope tell you how she can help</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-list-available-orders" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/cloud-music.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">MPD</td>
+                    <td class="vert-align">Play music via an MPD server</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-mpd" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/mpd.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/openweathermap.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Openweathermap</td>
+                    <td class="vert-align">Get the weather of a location</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_openweathermap" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/openweathermap.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/pi-camera.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Pi camera</td>
+                    <td class="vert-align">Take picture with your picamera</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-picamera" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/pushetta.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Pushetta</td>
+                    <td class="vert-align">Send a push message to a remote device like Android/iOS/Windows Phone or Chrome browser</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_pushetta" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/repeat.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Repeat</td>
+                    <td class="vert-align">Make Kalliope say whatever you want</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-repeat" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/rss.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">RSS_reader</td>
+                    <td class="vert-align">Get rss feed from website</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_rss_reader" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/rss_reader.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/slack.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Slack</td>
+                    <td class="vert-align">Post and Read message on Slack</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_slack" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/slack.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/hardware_info.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">System status</td>
+                    <td class="vert-align">Get info about the system (cpu, memory, …)</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-system-status" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/tasker.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Tasker</td>
+                    <td class="vert-align">Send a message to Android tasker app</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_tasker" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/todo.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Todotxt</td>
+                    <td class="vert-align">Manage a todo list (based on self hosted todotxt app) via Kalliope</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-todotxt" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/todotxt.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/twitter.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Twitter</td>
+                    <td class="vert-align">Send a Tweet from kalliope</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_twitter" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/twitter.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/uber.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Uber</td>
+                    <td class="vert-align">Get time and price estimation for a uber ride</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-uber" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/uber.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/wol.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Wake on LAN</td>
+                    <td class="vert-align">Wake on lan a computer</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_wake_on_lan" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/web-scraper.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Web scraper</td>
+                    <td class="vert-align">Read web pages that don't provide RSS feed or APIs (by scraping html)</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/bacardi55/kalliope-web-scraper" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/wikipedia.png" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">Wikipedia</td>
+                    <td class="vert-align">Search for a page on Wikipedia</td>
+                    <td class="vert-align">
+                        <a href="https://github.com/kalliope-project/kalliope_neuron_wikipedia" class="btn btn-primary btn-lg"
+                            type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        
+                        <a href="neurons/wikipedia.html" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+</html>

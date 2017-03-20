@@ -37,8 +37,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
-                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+                <li ><a href="/brain_examples.html">Community brain examples</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
             </ul>
         </div>
     </div>
@@ -53,7 +53,7 @@
     
     <div class="well">
         <h3 class="text-primary">Synapse</h3>
-        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">wikipedia-search"</span>
   <span class="s">neurons</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">wikipedia_searcher</span><span class="pi">:</span>
@@ -65,12 +65,12 @@
   <span class="s">signals</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">cherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
     <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-<span class="c1">#</span>
+
         </code></pre></figure>
 
         
         <h3 class="text-primary">Template</h3>
-        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            
 <span class="cp">{%</span> <span class="k">if</span> <span class="nv">returncode</span> <span class="o">==</span> <span class="s2">"DisambiguationError"</span> <span class="cp">%}</span>
     La recherche retourne les pages suivantes:
     <span class="cp">{%</span> <span class="k">if</span> <span class="nv">may_refer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kp">none</span> <span class="cp">%}</span>
@@ -83,7 +83,7 @@
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
     <span class="cp">{{</span> <span class="nv">summary</span> <span class="cp">}}</span>
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
-#
+
         </code></pre></figure>
         
 

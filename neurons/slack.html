@@ -37,8 +37,8 @@
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/brain_examples.html">Community brain examples</a></li>
-                <!--<li class="active"><a href="neuron_examples/neuron_examples.html">Neuron's demo</a></li>-->
+                <li ><a href="/brain_examples.html">Community brain examples</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
             </ul>
         </div>
     </div>
@@ -53,7 +53,7 @@
     
     <div class="well">
         <h3 class="text-primary">Synapse</h3>
-        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            <span class="c1">#</span>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">post-slack"</span>
   <span class="s">neurons</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">slack</span><span class="pi">:</span>
@@ -89,12 +89,12 @@
   <span class="s">signals</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Liste</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">utilisateurs</span><span class="nv"> </span><span class="s">connectés</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
     <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Liste</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">utilisateur</span><span class="nv"> </span><span class="s">connecté</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">slack"</span>
-<span class="c1">#</span>
+
         </code></pre></figure>
 
         
         <h3 class="text-primary">Template</h3>
-        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            #
+        <figure class="highlight"><pre><code class="language-jinja" data-lang="jinja">            
 # slack_user_template.j2
 <span class="cp">{%</span> <span class="k">if</span> <span class="nv">members</span><span class="o">|</span><span class="nf">length</span> <span class="o">==</span> <span class="nv">0</span> <span class="cp">%}</span>
     Aucun utilisateur connecté
@@ -111,7 +111,7 @@
         <span class="cp">{{</span> <span class="nv">key</span> <span class="cp">}}</span> a dit <span class="cp">{{</span> <span class="nv">value</span> <span class="cp">}}</span>
     <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
 <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
-#
+
         </code></pre></figure>
         
 
