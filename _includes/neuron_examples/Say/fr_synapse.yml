@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 
 - name: "say-hello-fr"
   signals:
@@ -17,4 +17,4 @@
         message:
           - "je choisis de dire le message 1"
           - "je choisis de dire le message 2"
-#{% endraw %}
+{% endraw %}

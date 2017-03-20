@@ -1,0 +1,21 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            Join the community and add your own videos to
+            <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/community_neurons.yml">
+            the list
+            </a>!
+        </p>
+    </div>
+    <!-- neuron core -->
+    {% include core_neuron.html neurons=site.data.core_neurons %}
+
+    <!-- neuron community -->
+    {% include community_neurons.html neurons=site.data.community_neurons %}
+</div>
+{% include footer.html %}

@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 ---
   - name: "Get-shopping-list"
     signals:
@@ -42,4 +42,4 @@
           project: "courses"
           say_template: "J'ai vidé la liste de course"
 
-#{% endraw %}
+{% endraw %}

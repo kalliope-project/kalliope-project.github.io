@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "Gmaps-distance"
   signals:
     - order: "distance entre {{origin}} et {{destination}}"
@@ -42,4 +42,4 @@
         args:
             - origin
             - destination
-#{% endraw %}
+{% endraw %}

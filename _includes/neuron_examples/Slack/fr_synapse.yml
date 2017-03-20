@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "post-slack"
   neurons:
     - slack:
@@ -34,4 +34,4 @@
   signals:
     - order: "Liste les utilisateurs connectés sur slack"
     - order: "Liste les utilisateur connecté sur slack"
-#{% endraw %}
+{% endraw %}

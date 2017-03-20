@@ -44,7 +44,7 @@
   demos:
 
 - neuron_name: List available orders
-  description: Let kalliope tell you what she how she can help
+  description: Let kalliope tell you how she can help
   doc_url: https://github.com/bacardi55/kalliope-list-available-orders
   logo: question-icon.png
   demos:

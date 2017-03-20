@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "news-monde"
   signals:
     - order: "Quelles sont les nouvelles du monde"
@@ -8,4 +8,4 @@
         feed_url: "http://www.lemonde.fr/rss/une.xml"
         max_items: 5
         file_template: rss.j2
-#{% endraw %}
+{% endraw %}

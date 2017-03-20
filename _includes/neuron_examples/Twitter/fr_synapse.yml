@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "post-tweet"
   neurons:
     - twitter:
@@ -10,4 +10,4 @@
           - tweet
   signals:
     - order: "envoie sur Twitter {{ tweet }}"
-#{% endraw %}
+{% endraw %}

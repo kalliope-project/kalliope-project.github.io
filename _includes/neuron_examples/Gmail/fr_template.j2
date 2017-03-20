@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 {% if unread|int() == 0 %}
 Vous n'avez pas d'email
 {% else %}
@@ -9,4 +9,4 @@ Vous avez {{ unread }} d'email
      {% set count = count + 1 %}
     {% endfor %}
 {% endif %}
-#{% endraw %}
+{% endraw %}

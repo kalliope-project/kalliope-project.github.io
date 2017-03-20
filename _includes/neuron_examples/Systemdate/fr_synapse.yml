@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 
 - name: "say-local-date"
   signals:
@@ -16,4 +16,4 @@
   neurons:
     - systemdate:
         file_template: "templates/systemdate_template_gouter.j2"
-#{% endraw %}
+{% endraw %}

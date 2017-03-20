@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 ---
   - name: "play-music-hiphop"
     signals:
@@ -103,4 +103,4 @@
           query: "tunein:station:s25257"
           mpd_volume: 33
 
-#{% endraw %}
+{% endraw %}

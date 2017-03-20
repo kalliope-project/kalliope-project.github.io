@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "wikipedia-search"
   neurons:
     - wikipedia_searcher:
@@ -10,4 +10,4 @@
   signals:
     - order: "cherche sur wikipédia {{ query }}"
     - order: "recherche sur wikipédia {{ query }}"
-#{% endraw %}
+{% endraw %}

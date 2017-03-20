@@ -1,4 +1,4 @@
-#{% raw %}
+{% raw %}
 - name: "read-facebook"
   signals:
     - order: "Quel est le dernier message de Omar Sy sur facebook"
@@ -21,4 +21,4 @@
           - message
   signals:
     - order: "envoie sur facebook {{ message }}"
-#{% endraw %}
+{% endraw %}
