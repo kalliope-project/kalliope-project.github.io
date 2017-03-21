@@ -158,3 +158,10 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Wwtime
+  description: Get time of any place in the world
+  doc_url: https://github.com/bacardi55/kalliope-wwtime
+  logo: wwtime.png
+  demos:
+    - demo_url: https://www.youtube.com/embed/EaCkXMi2q2I
+      synapse: fr_synapse.yml
