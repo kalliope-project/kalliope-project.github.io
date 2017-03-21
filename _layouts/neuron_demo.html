@@ -12,6 +12,15 @@ title: Kalliope
 
     {% for demo in page.demos %}
     <div class="well">
+        <h3 class="text-primary">Video</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="{{ demo.demo_url }}"></iframe>
+                </div>
+            </div>
+        </div>
+
         <h3 class="text-primary">Synapse</h3>
         {% highlight yaml %}
             {% include neuron_examples/{{page.neuron_name}}/{{demo.synapse}} %}
@@ -24,10 +33,6 @@ title: Kalliope
         {% endhighlight %}
         {% endif %}
 
-        <h3 class="text-primary">Video</h3>
-        <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="{{ demo.demo_url }}"></iframe>
-        </div>
     </div>
     {% endfor %}
 </div>
