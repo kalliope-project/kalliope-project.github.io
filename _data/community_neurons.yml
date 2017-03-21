@@ -16,11 +16,14 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
-- neuron_name: Google agenda
+- neuron_name: Google_agenda
   description: Get your next meetings on google calendar
   doc_url: https://github.com/bacardi55/kalliope-google-calendar
   logo: google-calendar.png
   demos:
+    - demo_url: https://www.youtube.com/embed/4Xp2cJH2p2s
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: Gmaps
   description: Get address / distance / time / directions from Google maps
@@ -82,6 +85,8 @@
   doc_url: https://github.com/bacardi55/kalliope-repeat
   logo: repeat.png
   demos:
+    - demo_url: https://www.youtube.com/embed/lNfpX0MYfFI
+      synapse: fr_synapse.yml
 
 - neuron_name: RSS_reader
   description: Get rss feed from website
@@ -143,11 +148,14 @@
   logo: wol.png
   demos:
 
-- neuron_name: Web scraper
+- neuron_name: Web_scraper
   description: Read web pages that don't provide RSS feed or APIs (by scraping html)
   doc_url: https://github.com/bacardi55/kalliope-web-scraper
   logo: web-scraper.png
   demos:
+    - demo_url: https://www.youtube.com/embed/PxjtLvpvEFY
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: Wikipedia
   description: Search for a page on Wikipedia

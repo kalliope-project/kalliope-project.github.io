@@ -1,0 +1,22 @@
+{% raw %}
+# fr_cinema_program.j2
+{% if returncode != 200 %}
+    Erreur lors de la récupération des programmes
+{% else %}
+    Monsieur, en ce moment au cinéma
+    {% for g in news: %}
+        {{ g['title'] }} : {{ g['content'] }}
+    {% endfor %}
+{% endif %}
+
+
+# fr_programme_tv.j2
+{% if returncode != 200 %}
+    Erreur lors de la récupération des programmes
+{% else %}
+    Monsieur, ce soir à la télévision:
+    {% for g in news: %}
+        {{ g['title'] }} : {{ g['content'] }}
+    {% endfor %}
+{% endif %}
+{% endraw %}

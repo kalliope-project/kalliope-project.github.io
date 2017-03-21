@@ -1,0 +1,33 @@
+{% raw %}
+- name: "Programme-tv"
+  signals:
+    - order: "qu'est-ce qu'il y a à la télé ce soir"
+  neurons:
+    - say:
+        message: "Probablement rien, mais je regarde"
+    - web_scraper:
+        url: "http://tvmag.lefigaro.fr/programme-tv/ce_soir_la_tv.html"
+        main_selector: "div.tvm-grid-channel__prog"
+        title_selector: "div.tvm-grid-channel__logo i"
+        description_selector: "div.tvm-grid-channel__part1 h3"
+        file_template: "templates/fr_programme_tv.j2"
+
+- name: "Cinema-program"
+  signals:
+    - order: "qu'est-ce qu'il y a au cinéma en ce moment"
+  neurons:
+    - say:
+        message: "Je regarde"
+    - web_scraper:
+        url: "http://www.allocine.fr/film/aucinema/"
+        main_selector: "section#content-start div.card-entity-list"
+        title_selector: "h2.meta-title"
+        description_selector: "div.meta-body div.meta-body-actor"
+        file_template: "templates/fr_cinema_program.j2"
+    - web_scraper:
+        url: "http://www.allocine.fr/film/aucinema/?page=2"
+        main_selector: "section#content-start div.card-entity-list"
+        title_selector: "h2.meta-title"
+        description_selector: "div.meta-body div.meta-body-actor"
+        file_template: "templates/fr_cinema_program.j2"
+{% endraw %}
