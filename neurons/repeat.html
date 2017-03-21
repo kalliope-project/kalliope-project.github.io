@@ -51,6 +51,49 @@
     </div>
 
     
+    <div class="well">
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">répète</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">query</span>
+        <span class="s">say_template</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Say-hello-to"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dis</span><span class="nv"> </span><span class="s">bonjour</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">query</span>
+        <span class="s">say_template</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">Bonjour</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}},</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">bienvenue"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat-via-api"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">api-repeat-cmd</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
+        <span class="s">args</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">query</span>
+        <span class="s">say_template</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+
+        </code></pre></figure>
+
+        
+
+        <h3 class="text-primary">Video</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lNfpX0MYfFI"></iframe>
+        </div>
+    </div>
+    
 </div>
 </body>
 </html>
