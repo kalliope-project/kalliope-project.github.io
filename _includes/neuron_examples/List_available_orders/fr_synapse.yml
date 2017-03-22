@@ -1,0 +1,10 @@
+{% raw %}
+  - name: "All-orders"
+    signals:
+      - order: "que puis-je demander"
+    neurons:
+      - list_available_orders:
+          query_replace_text: "et l'argument"
+          ignore_machine_name: 1
+          file_template: "templates/fr_template.j2"
+{% endraw %}
