@@ -1,0 +1,59 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            <h1 class="text-primary">Starter kits</h1>
+
+            <p>A starter kit is a repository that contains an already made configuration with some brain examples for a language.
+            Starter kit are a good entrypoint to learn how Kalliope works.</p>
+
+            <p>
+            How to use a starter kit:</br>
+            <li>Follow the doc to <a href="https://github.com/kalliope-project/kalliope/blob/master/Docs/installation.md">install Kalliope</a></li>
+            <li>Clone a starter kit: <code>git clone &lt;starter_kit_git_url.git&gt;</code></li>
+            <li>Place yourself into the starter kit: <code>cd cloned_starter_kit</code></li>
+            <li>Start kalliope: <code>kalliope start</code></li>
+            </p>
+        </p>
+    </div>
+
+    <div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Starter kits</h3>
+    </div>
+    <div class="panel-body">
+        Join the community and add your own starter kit to
+        <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/starter_kits.yml">
+        the list
+        </a>!
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td class="vert-align text-center"><strong>Language</strong></td>
+                    <td class="vert-align text-center"><strong>Repository</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for starter_kit in site.data.starter_kits %}
+                <tr>
+                    <td class="vert-align text-center">
+                        <span class="flag-icon flag-icon-{{starter_kit.flag}}"></span>
+                    </td>
+                    <td class="vert-align text-center">
+                        <a href="{{ starter_kit.repo_url }}" class="btn btn-primary" type="button">
+                            {{ starter_kit.language }}
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+{% include footer.html %}
