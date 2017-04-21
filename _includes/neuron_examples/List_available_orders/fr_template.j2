@@ -1,3 +1,4 @@
+{% raw %}
 {% if nb_orders > 0 %}
     Vous avez {{ nb_orders }} ordres disponibles:
     {% for order in orders %}
@@ -6,4 +7,4 @@
 {% else %}
     Aucun ordre disponible.
 {% endif %}
-
+{% endraw %}

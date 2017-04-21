@@ -46,12 +46,12 @@
   logo: loxscontrol.png
   demos:
 
-- neuron_name: List available orders
+- neuron_name: List_available_orders
   description: Let kalliope tell you how she can help
   doc_url: https://github.com/bacardi55/kalliope-list-available-orders
   logo: question-icon.png
   demos:
-    - demo: https://www.youtube.com/watch?v=HiqlDHaOtqY
+    - demo_url: https://www.youtube.com/embed/HiqlDHaOtqY
       synapse: fr_synapse.yml
       template: fr_template.j2
 
