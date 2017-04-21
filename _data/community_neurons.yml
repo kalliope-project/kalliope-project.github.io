@@ -126,6 +126,12 @@
     - demo_url: https://www.youtube.com/embed/DLmaspBVd2A?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
       synapse: fr_synapse.yml
 
+- neuron_name: Translate
+  description: Translate sentence with google API
+  doc_url: https://github.com/Ultchad/kalliope_neuron_translate
+  logo: translate.png
+  demos:
+
 - neuron_name: Twitter
   description: Send a Tweet from kalliope
   doc_url: https://github.com/kalliope-project/kalliope_neuron_twitter
