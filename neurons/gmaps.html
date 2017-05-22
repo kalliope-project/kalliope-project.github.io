@@ -74,9 +74,8 @@
         <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
         <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
         <span class="s">traffic_model</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pessimistic"</span>
-        <span class="s">args</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">origin</span>
-          <span class="pi">-</span> <span class="s">destination</span>
+        <span class="s">origin</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">origin</span><span class="nv"> </span><span class="s">}}"</span>
+        <span class="s">destination</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">destination</span><span class="nv"> </span><span class="s">}}"</span>
         <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
 
 <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Gmaps-place-address"</span>
@@ -88,8 +87,7 @@
         <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
         <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
         <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
-        <span class="s">args</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">search</span>
+        <span class="s">search</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">search</span><span class="nv"> </span><span class="s">}}"</span>
         <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
 
 <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Gmaps-direction"</span>
@@ -104,9 +102,8 @@
         <span class="s">units</span><span class="pi">:</span> <span class="s2">"</span><span class="s">metric"</span>
         <span class="s">direction</span><span class="pi">:</span> <span class="s2">"</span><span class="s">True"</span>
         <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_gmaps.j2"</span>
-        <span class="s">args</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">origin</span>
-            <span class="pi">-</span> <span class="s">destination</span>
+        <span class="s">origin</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">origin</span><span class="nv"> </span><span class="s">}}"</span>
+
 
 
         </code></pre></figure>
