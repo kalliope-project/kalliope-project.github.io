@@ -6,7 +6,6 @@
       - wwtime:
           gmaps_api_key: "{{gmaps_api_key}}"
           local: "Paris France"
-          args:
-            - city
+          city: "{{ city}}"
           say_template: "Monsieur, à {{city.arg}}, il est {{city.time.hour}} heure et {{city.time.minute}} minutes"
 {% endraw %}

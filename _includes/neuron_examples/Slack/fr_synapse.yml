@@ -5,8 +5,7 @@
         action: "POST"
         slack_token: "{{slack_token}}"
         channel: "#fun"
-        args:
-          - message
+        message: "{{ message }}"
   signals:
     - order: "envoi sur slack {{ message }}"
     - order: "envoie sur slack {{ message }}"

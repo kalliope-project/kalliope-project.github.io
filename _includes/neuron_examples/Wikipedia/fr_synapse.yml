@@ -4,8 +4,7 @@
     - wikipedia_searcher:
         language: "fr"
         sentences: "1"
-        args:
-          - query
+        query: "{{ query }}"
         file_template: "templates/wikipedia_returned_value.j2"
   signals:
     - order: "cherche sur wikipédia {{ query }}"

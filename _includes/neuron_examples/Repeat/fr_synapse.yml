@@ -4,8 +4,7 @@
     - order: "répète {{ query }}"
   neurons:
     - repeat:
-        args:
-          - query
+        query: "{{ query }}"
         say_template:
           - "{{ query }}"
 
@@ -14,8 +13,7 @@
     - order: "dis bonjour à {{ query }}"
   neurons:
     - repeat:
-        args:
-          - query
+        query: "{{query}}"
         say_template:
           - "Bonjour {{ query }}, et bienvenue"
 
@@ -24,8 +22,7 @@
     - order: "api-repeat-cmd {{ query }}"
   neurons:
     - repeat:
-        args:
-          - query
+        query: "{{query}}"
         say_template:
           - "{{ query }}"
 {% endraw %}

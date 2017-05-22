@@ -9,9 +9,8 @@
         language: "fr"
         units: "metric"
         traffic_model: "pessimistic"
-        args:
-          - origin
-          - destination
+        origin: "{{ origin }}"
+        destination: "{{ destination }}"
         file_template: "templates/fr_gmaps.j2"
 
 - name: "Gmaps-place-address"
@@ -23,8 +22,7 @@
         gmaps_api_key: "{{gmaps_api_key}}"
         language: "fr"
         units: "metric"
-        args:
-          - search
+        search: "{{ search }}"
         file_template: "templates/fr_gmaps.j2"
 
 - name: "Gmaps-direction"
@@ -39,7 +37,6 @@
         units: "metric"
         direction: "True"
         file_template: "templates/fr_gmaps.j2"
-        args:
-            - origin
-            - destination
+        origin: "{{ origin }}"
+
 {% endraw %}

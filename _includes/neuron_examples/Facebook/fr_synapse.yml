@@ -17,8 +17,7 @@
     - facebook_manager:
         action: "POST"
         token: "{{fb_token}}"
-        args:
-          - message
+        message: "{{message}}"
   signals:
     - order: "envoie sur facebook {{ message }}"
 {% endraw %}

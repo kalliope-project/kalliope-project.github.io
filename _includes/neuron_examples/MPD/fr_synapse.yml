@@ -88,8 +88,7 @@
           mpd_action: "search"
           mpd_random: 0
           mpd_volume: 33
-          args:
-            - query
+          query: "{{ query }}"
 
   - name: "play-radio-voltage"
     signals:

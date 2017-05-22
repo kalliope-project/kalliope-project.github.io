@@ -27,8 +27,7 @@
           action: "add"
           todotxt_file: "{{todofile}}"
           project: "courses"
-          args:
-             - content
+          content: "{{ content}}"
           say_template: "J'ai ajouté {{added_task.task}} a la liste des courses"
 
   - name: "delete-shopping-list"
