@@ -75,6 +75,12 @@
     - demo_url: https://www.youtube.com/embed/Zdn7CUQlV1E?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
       synapse: fr_synapse.yml
 
+- neuron_name: Onkyo
+  description: Control your Onkyo via eISCP
+  doc_url: https://github.com/corus87/gpio-neuron
+  logo: onkyo.png
+  demos:
+  
 - neuron_name: Openweathermap
   description: Get the weather of a location
   doc_url: https://github.com/kalliope-project/kalliope_neuron_openweathermap
