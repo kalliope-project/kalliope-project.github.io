@@ -40,6 +40,12 @@
   logo: hue.png
   demos:
 
+- neuron_name: Kodi
+  description: Control Kodi
+  doc_url: https://github.com/corus87/kodi-neuron
+  logo: kodi.png
+  demos:
+
 - neuron_name: LoxSControl
   description: Control Loxone home automation system
   doc_url: https://github.com/andweber/kalliope_neuron_loxscontrol
