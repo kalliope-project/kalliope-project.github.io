@@ -34,10 +34,22 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Gpio
+  description: Control the Gpios of your Raspberry including the 1-wire bus
+  doc_url: https://github.com/corus87/gpio-neuron
+  logo: raspberry.png
+  demos:
+  
 - neuron_name: HUE
   description: Control the Philips Hue lighting system
   doc_url: https://github.com/kalliope-project/kalliope_neuron_hue
   logo: hue.png
+  demos:
+
+- neuron_name: Kodi
+  description: Control Kodi
+  doc_url: https://github.com/corus87/kodi-neuron
+  logo: kodi.png
   demos:
 
 - neuron_name: LoxSControl
@@ -63,6 +75,12 @@
     - demo_url: https://www.youtube.com/embed/Zdn7CUQlV1E?list=PLDc8cUmeFkpKdErR5iYTkGJ1-4A05zHIi
       synapse: fr_synapse.yml
 
+- neuron_name: Onkyo
+  description: Control your Onkyo via eISCP
+  doc_url: https://github.com/corus87/gpio-neuron
+  logo: onkyo.png
+  demos:
+  
 - neuron_name: Openweathermap
   description: Get the weather of a location
   doc_url: https://github.com/kalliope-project/kalliope_neuron_openweathermap
