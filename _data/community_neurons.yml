@@ -77,7 +77,7 @@
 
 - neuron_name: Onkyo
   description: Control your Onkyo via eISCP
-  doc_url: https://github.com/corus87/gpio-neuron
+  doc_url: https://github.com/corus87/onkyo-neuron
   logo: onkyo.png
   demos:
   
