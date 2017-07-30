@@ -37,25 +37,31 @@ jekyll serve --host=0.0.0.0
 
 ## Push build to github
 
-As we use a community plugin (https://github.com/avillafiorita/jekyll-datapage_gen). We need to generate the site locally and then push the site's static files to the GitHub Pages site. See [Github doc](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).
+As we use a community plugin (https://github.com/avillafiorita/jekyll-datapage_gen). We need to generate the site locally and then push the site's static files to the GitHub Pages site. See [Github doc](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/) and [this page](https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200) to know how to use a non supported Jeykill pluggin into Github.
 
 Code in the branch "source"
 ```
 git checkout sources
 ```
 
-Build the project
+The first time you compile the site, you need to checkout already generated files.
 ```
+rm - rf _site/*
+cd _site
+git init
+git remote add origin git@github.com:kalliope-project/kalliope-project.github.io.git
+git pull origin master
+```
+
+Then, you can build the site. Git will see the delta between old and new generated files in `_site` folder
+```
+cd ..   # to be placed in the root of the project
 jekyll build
 ```
 
-Go into the build folder
+Go into the build folder, commit and push
 ```
 cd _site
-```
-
-Commit and push
-```
 git commit -m "jekyll build update"
 git push origin master
 ```
