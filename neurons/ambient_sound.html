@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambient_sound</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="/brain_examples.html">Community brain examples</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
+                <li ><a href="/starter_kit.html">Starter kits</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Ambient_sound</h1>
+        <p>Background sounds for focusing or create a relaxing ambiance.</p>
+        <p><a href="https://github.com/kalliope-project/kalliope_neuron_ambient_sound" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Neuron documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Video</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q_giVwsF-6A"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ambient-random"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lance</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">bruit</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">fond"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">ambient_sound</span><span class="pi">:</span>
+        <span class="s">state</span><span class="pi">:</span> <span class="s2">"</span><span class="s">on"</span>
+        <span class="s">say_template</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s2">"</span><span class="s">je</span><span class="nv"> </span><span class="s">lance</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">playing_sound</span><span class="nv"> </span><span class="s">}}"</span>
+
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ambient-stop"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stop</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">bruit</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">fond"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">ambient_sound</span><span class="pi">:</span>
+        <span class="s">state</span><span class="pi">:</span> <span class="s2">"</span><span class="s">off"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ambient-rain"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ambiance</span><span class="nv"> </span><span class="s">pluvieuse"</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">ambient_sound</span><span class="pi">:</span>
+        <span class="s">state</span><span class="pi">:</span> <span class="s2">"</span><span class="s">on"</span>
+        <span class="s">sound_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">forest-rain"</span>
+
+        </code></pre></figure>
+
+        
+
+    </div>
+    
+</div>
+</body>
+</html>
