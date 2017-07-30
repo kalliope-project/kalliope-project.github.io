@@ -1,0 +1,9 @@
+- title: "Android app"
+  description: "Remote control of your Kalliope instance from your Android smartphone"
+  image: "kalliope_app.png"
+  url: "https://play.google.com/store/apps/details?id=kalliope.project"
+
+- title: "Web UI"
+  description: "Remote control of your Kalliope instance from self hosted web app"
+  image: "kalliope_web_ui.png"
+  url: "https://github.com/bacardi55/kalliope-remote"

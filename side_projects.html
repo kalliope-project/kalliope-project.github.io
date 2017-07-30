@@ -1,0 +1,35 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            Join the community and add your own side projects
+            <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/side_projects.yml">
+            the list
+            </a>!
+        </p>
+    </div>
+
+    {% for side_project in site.data.side_projects %}
+    <div class="well">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-primary">{{ side_project.title }}</h2>
+                <p>{{ side_project.description }}</p>
+                <a href="{{ side_project.url }}" class="btn btn-raised btn-primary">
+                    More info<div class="ripple-container"></div>
+                </a>
+
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive img-rounded center-block" src="images/{{ side_project.image }}">
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+{% include footer.html %}
