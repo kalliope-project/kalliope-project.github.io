@@ -1,0 +1,26 @@
+{% raw %}
+- name: "ambient-random"
+  signals:
+    - order: "lance un bruit de fond"
+  neurons:
+    - ambient_sound:
+        state: "on"
+        say_template:
+          - "je lance {{ playing_sound }}"
+
+
+- name: "ambient-stop"
+  signals:
+    - order: "stop le bruit de fond"
+  neurons:
+    - ambient_sound:
+        state: "off"
+
+- name: "ambient-rain"
+  signals:
+    - order: "ambiance pluvieuse"
+  neurons:
+    - ambient_sound:
+        state: "on"
+        sound_name: "forest-rain"
+{% endraw %}
