@@ -75,6 +75,14 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Movie_DB
+  description: Query Movie DB about movies, actor, director, ...
+  doc_url: https://github.com/royto/kalliope_neuron_movie_db
+  logo: movie_db.png
+  demos:
+    - demo_url: https://www.youtube.com/embed/9_I4ylts9us
+      synapse: fr_synapse.yml
+
 - neuron_name: MPD
   description: Play music via an MPD server
   doc_url: https://github.com/bacardi55/kalliope-mpd

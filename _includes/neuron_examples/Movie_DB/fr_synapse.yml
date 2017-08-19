@@ -1,0 +1,69 @@
+{% raw %}
+- name: "search-movie"
+  signals:
+    - order: "recherche le film {{ movie}}"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "MOVIE"
+        language: "fr"
+        movie_extra: "credits"
+        file_template: templates/fr_movie_db_movie.j2
+        movie: {{ movie }}
+
+- name: "movie-people"
+  signals:
+    - order: "recherche l'acteur {{ people }}"
+    - order: "recherche l'actrice {{ people }}"
+    - order: "recherche le réalisateur {{ people }}"
+    - order: "recherche la réalisatrice {{ people }}"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "PEOPLE"
+        say_template:
+        - "{{ name }}, ne le {{ birthday }} a {{place_of_birth }}, {{ biography }}, connu pour {{known_for[0].title}} "
+        people: {{ people }}
+
+- name: "popular-movie"
+  signals:
+    - order: "Quels sont les films populaires"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "POPULAR"
+        language: "fr"
+        file_template: templates/fr_movie_db_popular.j2
+
+- name: "top-rated-movie"
+  signals:
+    - order: "Quels sont les films les mieux notées"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "TOP_RATED"
+        language: "fr"
+        file_template: templates/fr_movie_db_top_rated.j2
+
+- name: "upcoming-movie"
+  signals:
+    - order: "Quels sont les films prochainement à l'affiche"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "UPCOMING"
+        language: "fr"
+        region: "FR"
+        file_template: templates/fr_movie_db_upcoming.j2
+
+- name: "now-playing-movie"
+  signals:
+    - order: "Quels sont les films au cinéma"
+  neurons:
+    - movie_db:
+        api_key: "f22dee8896fa736e914d00504a7fc6b0"
+        action: "NOW_PLAYING"
+        language: "fr"
+        region: "FR"
+        file_template: templates/fr_movie_db_now_playing.j2
+{% endraw %}
