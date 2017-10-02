@@ -1,7 +1,7 @@
 # get the flag code: http://flag-icon-css.lip.is/
 
 - language: Czech Republic
-  repo_url: https://github.com/FoxKyong/kalliope_starter_cs
+  repo_url: https://github.com/kalliope-project/kalliope_starter_cs
   flag: cz
 
 - language: English
