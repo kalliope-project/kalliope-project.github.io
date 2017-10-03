@@ -16,3 +16,7 @@
 - language: German
   repo_url: https://github.com/kalliope-project/kalliope_starter_de
   flag: de
+
+- language: Italian
+  repo_url: https://github.com/kalliope-project/kalliope_starter_it
+  flag: it

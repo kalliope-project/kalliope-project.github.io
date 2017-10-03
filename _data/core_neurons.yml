@@ -16,6 +16,18 @@
   logo: mqtt_publisher.png
   demos:
 
+- neuron_name: Mute
+  description: Mute Kalliope by pausing the trigger engine
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/mute
+  logo: mute.png
+  demos:
+
+- neuron_name: Neurotimer
+  description: Run a synapse after a delay
+  doc_url: https://github.com/kalliope-project/kalliope/tree/dev/kalliope/neurons/neurotimer
+  logo: neurotimer.png
+  demos:
+
 - neuron_name: Neurotransmitter
   description: Link synapses together
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
