@@ -10,6 +10,12 @@
   logo: kill_switch.png
   demos:
 
+- neuron_name: mqtt_publisher
+  description: Push a message to a MQTT broker server
+  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/mqtt_publisher
+  logo: mqtt_publisher.png
+  demos:
+
 - neuron_name: Neurotransmitter
   description: Link synapses together
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
