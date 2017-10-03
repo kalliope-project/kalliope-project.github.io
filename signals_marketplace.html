@@ -1,0 +1,22 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            Join the community and add your own videos to
+            <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/community_signals.yml">
+            the list
+            </a>    
+        </p>
+        A signal is an input event triggered by a synapse. When a signal is caught, Kalliope runs attached neurons of the synapse.
+    </div>
+    <!-- neuron core -->
+    {% include core_signal.html signals=site.data.core_signals %}
+
+    <!-- neuron community -->
+    <!-- {% include community_neurons.html neurons=site.data.community_neurons %} -->
+</div>
+{% include footer.html %}
