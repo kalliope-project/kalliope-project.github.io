@@ -7,3 +7,8 @@
   description: "Remote control of your Kalliope instance from self hosted web app"
   image: "kalliope_web_ui.png"
   url: "https://github.com/bacardi55/kalliope-remote"
+
+- title: "Interactive shell"
+  description: "Remote control of your Kalliope instance from a terminal"
+  image: "kalliope_cli.png"
+  url: "https://github.com/bacardi55/kalliope-cli"
