@@ -6,6 +6,12 @@
     - demo_url: https://www.youtube.com/embed/q_giVwsF-6A
       synapse: fr_synapse.yml
 
+- neuron_name: Domoticz
+  description: Integration with Domoticz home automation system
+  doc_url: https://github.com/bacardi55/kalliope-domoticz
+  logo: domoticz.png
+  demos:
+
 - neuron_name: Facebook
   description: Post and Read message on Facebook
   doc_url: https://github.com/kalliope-project/kalliope_neuron_facebook
