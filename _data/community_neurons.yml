@@ -6,6 +6,12 @@
     - demo_url: https://www.youtube.com/embed/q_giVwsF-6A
       synapse: fr_synapse.yml
 
+- neuron_name: Arithmetics
+  description: A quiz for simple calculation tasks 
+  doc_url: https://github.com/1account/kalliope_neuron_arithmetics
+  logo: arithmetics.png
+  demos:
+
 - neuron_name: Calculator
   description: Calculate simple operations
   doc_url: https://github.com/corus87/calculator-neuron
