@@ -33,6 +33,12 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Flashcards
+  description: A simple front to back flashcard quiz
+  doc_url: https://github.com/1account/kalliope_neuron_flashcards
+  logo: flashcards.png
+  demos:
+
 - neuron_name: Gmail
   description: Get the number of unread email and their subjects from a gmail account
   doc_url: https://github.com/kalliope-project/kalliope_neuron_gmail
