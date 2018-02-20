@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic_mirror</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                    <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
+                <li ><a href="/starter_kit.html">Starter kits</a></li>
+                <li ><a href="/side_projects.html">Side projects</a></li>
+                <li ><a href="/brain_examples.html">Brain examples</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Magic_mirror</h1>
+        <p>Control your Magic Mirror from Kalliope</p>
+        <p><a href="https://github.com/kalliope-project/kalliope_neuron_magic_mirror" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Neuron documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Video</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QHwctPbJ2ZY"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
+<span class="c1"># this is placed in settings</span>
+<span class="s">hooks</span><span class="pi">:</span>
+  <span class="s">on_start_speaking</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
+
+<span class="c1"># this is placed in the brain</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
+  <span class="s">signals</span><span class="pi">:</span> <span class="pi">[]</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">magic_mirror</span><span class="pi">:</span>
+        <span class="s">mm_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://127.0.0.1:8080/kalliope"</span>
+        <span class="s">notification</span><span class="pi">:</span> <span class="s2">"</span><span class="s">KALLIOPE"</span>
+        <span class="s">payload</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">kalliope_memory['kalliope_last_tts_message']</span><span class="nv"> </span><span class="s">}}"</span>
+
+        </code></pre></figure>
+
+        
+
+    </div>
+    
+</div>
+</body>
+</html>

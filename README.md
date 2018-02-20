@@ -46,7 +46,7 @@ git checkout sources
 
 The first time you compile the site, you need to checkout already generated files.
 ```
-rm - rf _site/*
+rm -rf _site/*
 cd _site
 git init
 git remote add origin git@github.com:kalliope-project/kalliope-project.github.io.git
