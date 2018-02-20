@@ -1,0 +1,14 @@
+{% raw %}
+# this is placed in settings
+hooks:
+  on_start_speaking: "mm-say"
+
+# this is placed in the brain
+- name: "mm-say"
+  signals: []
+  neurons:
+    - magic_mirror:
+        mm_url: "http://127.0.0.1:8080/kalliope"
+        notification: "KALLIOPE"
+        payload: "{{ kalliope_memory['kalliope_last_tts_message'] }}"
+{% endraw %}

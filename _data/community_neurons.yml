@@ -7,7 +7,7 @@
       synapse: fr_synapse.yml
 
 - neuron_name: Arithmetics
-  description: A quiz for simple calculation tasks 
+  description: A quiz for simple calculation tasks
   doc_url: https://github.com/1account/kalliope_neuron_arithmetics
   logo: arithmetics.png
   demos:
@@ -17,7 +17,7 @@
   doc_url: https://github.com/corus87/calculator-neuron
   logo: calculator.png
   demos:
-  
+
 - neuron_name: Domoticz
   description: Integration with Domoticz home automation system
   doc_url: https://github.com/bacardi55/kalliope-domoticz
@@ -92,6 +92,14 @@
     - demo_url: https://www.youtube.com/embed/HiqlDHaOtqY
       synapse: fr_synapse.yml
       template: fr_template.j2
+
+- neuron_name: Magic_mirror
+  description: Control your Magic Mirror from Kalliope
+  doc_url: https://github.com/kalliope-project/kalliope_neuron_magic_mirror
+  logo: mirror.png
+  demos:
+    - demo_url: https://www.youtube.com/embed/QHwctPbJ2ZY
+      synapse: en_synapse.yml
 
 - neuron_name: Movie_DB
   description: Query Movie DB about movies, actor, director, ...
