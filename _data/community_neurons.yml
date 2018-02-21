@@ -33,6 +33,11 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Gif Maker
+  description: A funny way to make Gif
+  doc_url: https://github.com/slapker/kalliope-gif
+  logo: gif-maker.png
+
 - neuron_name: Gmail
   description: Get the number of unread email and their subjects from a gmail account
   doc_url: https://github.com/kalliope-project/kalliope_neuron_gmail
