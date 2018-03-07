@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gpio_input</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/ripples.min.css">
+
+    <!-- flags -->
+    <link href="/assets/docs.css" rel="stylesheet">
+    <link href="/css/flag-icon.css" rel="stylesheet">
+
+    <!-- font-linux -->
+    <link rel="stylesheet" type="text/css" href="/assets/font-linux.css">
+
+    <!-- Personal css-->
+    <link rel="stylesheet" type="text/css" href="/css/kalliope.css">
+
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Kalliope</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                    <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
+                <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
+                <li ><a href="/starter_kit.html">Starter kits</a></li>
+                <li ><a href="/side_projects.html">Side projects</a></li>
+                <li ><a href="/brain_examples.html">Brain examples</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h1>gpio_input</h1>
+        <p>Run synapses from a Raspberry Pi digital input received on a GPIO pin</p>
+        <p><a href="https://github.com/kalliope-project/kalliope_signal_gpio_input" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Signal documentation</a></p>
+    </div>
+
+    
+    <div class="well">
+        <h3 class="text-primary">Video</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dleoPiUEc7I"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-primary">Synapse</h3>
+        <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-pir"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
+        <span class="s">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">16</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">detected"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-off"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
+        <span class="s">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">17</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">off"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-on"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
+        <span class="s">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">22</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">on"</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-push-button"</span>
+  <span class="s">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
+        <span class="s">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">27</span>
+  <span class="s">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
+        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">button</span><span class="nv"> </span><span class="s">pressed"</span>
+
+        </code></pre></figure>
+
+        
+
+    </div>
+    
+</div>
+</body>
+</html>
