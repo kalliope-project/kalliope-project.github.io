@@ -1,0 +1,39 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{page.signal_name}}</h1>
+        <p>{{page.description}}</p>
+        <p><a href="{{page.doc_url}}" class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Signal documentation</a></p>
+    </div>
+
+    {% for demo in page.demos %}
+    <div class="well">
+        <h3 class="text-primary">Video</h3>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="{{ demo.demo_url }}"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-primary">Synapse</h3>
+        {% highlight yaml %}
+            {% include signal_examples/{{page.signal_name}}/{{demo.synapse}} %}
+        {% endhighlight %}
+
+        {% if demo.template %}
+        <h3 class="text-primary">Template</h3>
+        {% highlight jinja %}
+            {% include signal_examples/{{page.signal_name}}/{{demo.template}} %}
+        {% endhighlight %}
+        {% endif %}
+
+    </div>
+    {% endfor %}
+</div>
+{% include footer.html %}

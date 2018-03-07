@@ -41,3 +41,7 @@ page_gen:
     template: neuron_demo
     name: neuron_name
     dir: neurons
+  - data: community_signals
+    template: signal_demo
+    name: signal_name
+    dir: signals

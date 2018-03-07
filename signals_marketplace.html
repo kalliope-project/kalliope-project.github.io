@@ -9,7 +9,7 @@ title: Kalliope
             Join the community and add your own videos to
             <a href="https://github.com/kalliope-project/kalliope-project.github.io/blob/sources/_data/community_signals.yml">
             the list
-            </a>    
+            </a>
         </p>
         A signal is an input event triggered by a synapse. When a signal is caught, Kalliope runs attached neurons of the synapse.
     </div>
@@ -17,6 +17,7 @@ title: Kalliope
     {% include core_signal.html signals=site.data.core_signals %}
 
     <!-- signal community -->
-   
+    {% include community_signals.html signals=site.data.community_signals %}
+
 </div>
 {% include footer.html %}

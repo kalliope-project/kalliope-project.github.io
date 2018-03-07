@@ -1,0 +1,7 @@
+- signal_name: gpio_input
+  description: Run synapses from a Raspberry Pi digital input received on a GPIO pin
+  doc_url: https://github.com/kalliope-project/kalliope_signal_gpio_input
+  logo: signal_gpio_input.png
+  demos:
+    - demo_url: https://www.youtube.com/embed/dleoPiUEc7I
+      synapse: fr_synapse.yml

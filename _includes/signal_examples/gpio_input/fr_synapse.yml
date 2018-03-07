@@ -1,0 +1,37 @@
+{% raw %}
+- name: "gpio-pir"
+  signals:
+    - gpio_input:
+        pins:
+          - 16
+  neurons:
+    - say:
+        message: "detected"
+
+- name: "gpio-off"
+  signals:
+    - gpio_input:
+        pins:
+          - 17
+  neurons:
+    - say:
+        message: "switch off"
+
+- name: "gpio-on"
+  signals:
+    - gpio_input:
+        pins:
+          - 22
+  neurons:
+    - say:
+        message: "switch on"
+
+- name: "gpio-push-button"
+  signals:
+    - gpio_input:
+        pins:
+          - 27
+  neurons:
+    - say:
+        message: "button pressed"
+{% endraw %}
