@@ -18,6 +18,12 @@
   logo: calculator.png
   demos:
 
+- neuron_name: Dht_sensor
+  description: Get temperature and humidity from DHT series of humidity and temperature sensors.
+  doc_url: https://github.com/Sispheor/kalliope_neuron_dht_sensor
+  logo: temperature_humidity.png
+  demos:
+
 - neuron_name: Domoticz
   description: Integration with Domoticz home automation system
   doc_url: https://github.com/bacardi55/kalliope-domoticz
