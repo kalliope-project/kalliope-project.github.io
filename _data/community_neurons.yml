@@ -220,7 +220,7 @@
 
 - neuron_name: TwitchTv
   description: Ask Kalliope who of your favorite players are streaming now.
-  doc_url: https:://github.com/bacardi55/kalliope-twitchtv
+  doc_url: https://github.com/bacardi55/kalliope-twitchtv
   logo: twitchtv.png
   demos:
 
