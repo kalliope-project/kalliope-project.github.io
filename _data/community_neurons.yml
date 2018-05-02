@@ -189,7 +189,7 @@
 - neuron_name: Snapcast
   description: Manage Snapcast Clients
   doc_url: https://github.com/bacardi55/kalliope-snapcast-api
-  logo: slapcast.png
+  logo: snapcast.png
   demos:
 
 - neuron_name: System status
