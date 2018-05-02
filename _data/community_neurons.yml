@@ -186,6 +186,12 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Snapcast
+  description: Manage Snapcast Clients
+  doc_url: https://github.com/bacardi55/kalliope-snapcast-api
+  logo: slapcast.png
+  demos:
+
 - neuron_name: System status
   description: Get info about the system (cpu, memory, …)
   doc_url: https://github.com/bacardi55/kalliope-system-status
@@ -210,6 +216,12 @@
   description: Translate sentence with google API
   doc_url: https://github.com/Ultchad/kalliope_neuron_translate
   logo: translate.png
+  demos:
+
+- neuron_name: TwitchTv
+  description: Ask Kalliope who of your favorite players are streaming now.
+  doc_url: https://github.com/bacardi55/kalliope-twitchtv
+  logo: twitchtv.png
   demos:
 
 - neuron_name: Twitter
