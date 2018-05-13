@@ -4,6 +4,24 @@
   logo: Ansible_logo.png
   demos:
 
+- neuron_name: Brain
+  description: Enable or disable synapses from the brain
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/brain
+  logo: brain.png
+  demos:
+
+- neuron_name: Deaf
+  description: Make Kalliope deaf by pausing the trigger engine
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/deaf
+  logo: deaf.png
+  demos:
+
+- neuron_name: Debug
+  description: Print a message in the console
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/debug
+  logo: debug.png
+  demos:
+
 - neuron_name: Kill switch
   description: Stop Kalliope process
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/kill_switch
@@ -14,12 +32,6 @@
   description: Push a message to a MQTT broker server
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/mqtt_publisher
   logo: mqtt_publisher.png
-  demos:
-
-- neuron_name: Mute
-  description: Mute Kalliope by pausing the trigger engine
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/mute
-  logo: mute.png
   demos:
 
 - neuron_name: Neurotimer
@@ -44,17 +56,28 @@
     - demo_url: https://www.youtube.com/embed/Eo4dg5oOgHI
       synapse: fr_synapse.yml
 
-
 - neuron_name: Script
   description: Run an executable script
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/script
   logo: script.png
   demos:
 
+- neuron_name: Settings
+  description: Manage / Update / Add settings entries of Kalliope
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/settings
+  logo: settings.png
+  demos:  
+
 - neuron_name: Shell
   description: Run a shell command
   doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/shell
   logo: shell.png
+  demos:
+
+- neuron_name: Signals
+  description: Send a message to all signals launched in Kalliope to update their behavior
+  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/signals
+  logo: signals.png
   demos:
 
 - neuron_name: Sleep
