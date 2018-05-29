@@ -12,3 +12,13 @@
   description: "Remote control of your Kalliope instance from a terminal"
   image: "kalliope_cli.png"
   url: "https://github.com/bacardi55/kalliope-cli"
+
+- title: "Kalliope Docker"
+  description: "Download, run and handle the voice controlled personal assistant Kalliope inside a Debian Docker container"
+  image: "kalliope-docker.png"
+  url: "https://github.com/frnmst/kalliope-docker"
+
+- title: "kalliope-rest"
+  description: "A CLI frontend and API for the Kalliope REST API"
+  image: "kalliope-rest.png"
+  url: "https://github.com/frnmst/kalliope-rest"
