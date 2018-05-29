@@ -1,22 +1,22 @@
 - signal_name: Event
   description: Run a synapse from a scheduled event
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/signals/event
+  doc_url: https://kalliope-project.github.io/kalliope/brain/signals/event/
   logo: signal_event.png
   demos:
 
 - signal_name: Geolocalisation
   description: A way to launch a synapse when ENTERING a geolocated zone.
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/signals/geolocation
+  doc_url: https://kalliope-project.github.io/kalliope/brain/signals/geolocation/
   logo: geolocalisation.png
 
 - signal_name: Mqtt_subscriber
   description: Run a synapse from a received message on a MQTT broker
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/signals/mqtt_subscriber
+  doc_url: https://kalliope-project.github.io/kalliope/brain/signals/mqtt_subscriber/
   logo: signal_mqtt.png
   demos:
 
 - signal_name: Order
   description: Run a synapse from a vocal order
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/signals/order
+  doc_url: https://kalliope-project.github.io/kalliope/brain/signals/order/
   logo: signal_order.png
   demos:

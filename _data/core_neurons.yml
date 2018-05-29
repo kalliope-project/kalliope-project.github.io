@@ -1,48 +1,42 @@
 - neuron_name: Ansible Playbook
   description: Run an ansible playbook
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/ansible_playbook
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/ansible_playbook/
   logo: Ansible_logo.png
   demos:
 
 - neuron_name: Brain
   description: Enable or disable synapses from the brain
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/brain
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/brain/
   logo: brain.png
-  demos:
-
-- neuron_name: Deaf
-  description: Make Kalliope deaf by pausing the trigger engine
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/deaf
-  logo: deaf.png
   demos:
 
 - neuron_name: Debug
   description: Print a message in the console
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/debug
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/debug/
   logo: debug.png
   demos:
 
 - neuron_name: Kill switch
   description: Stop Kalliope process
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/kill_switch
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/kill_switch/
   logo: kill_switch.png
   demos:
 
 - neuron_name: mqtt_publisher
   description: Push a message to a MQTT broker server
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/mqtt_publisher
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/mqtt_publisher/
   logo: mqtt_publisher.png
   demos:
 
 - neuron_name: Neurotimer
   description: Run a synapse after a delay
-  doc_url: https://github.com/kalliope-project/kalliope/tree/dev/kalliope/neurons/neurotimer
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/neurotimer/
   logo: neurotimer.png
   demos:
 
 - neuron_name: Neurotransmitter
   description: Link synapses together
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/neurotransmitter
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/neurotransmitter/
   logo: neurotransmitter.png
   demos:
     - demo_url: https://www.youtube.com/embed/IR9hYo3m6OU
@@ -50,7 +44,7 @@
 
 - neuron_name: Say
   description: Make Kalliope talk by using TTS
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/say
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/say/
   logo: say.png
   demos:
     - demo_url: https://www.youtube.com/embed/Eo4dg5oOgHI
@@ -58,37 +52,37 @@
 
 - neuron_name: Script
   description: Run an executable script
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/script
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/script/
   logo: script.png
   demos:
 
 - neuron_name: Settings
   description: Manage / Update / Add settings entries of Kalliope
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/settings
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/settings/
   logo: settings.png
-  demos:  
+  demos:
 
 - neuron_name: Shell
   description: Run a shell command
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/shell
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/shell/
   logo: shell.png
   demos:
 
 - neuron_name: Signals
   description: Send a message to all signals launched in Kalliope to update their behavior
-  doc_url: https://github.com/kalliope-project/kalliope/tree/master/kalliope/neurons/signals
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/signals/
   logo: signals.png
   demos:
 
 - neuron_name: Sleep
   description: Make Kalliope sleep for a while before continuing
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/sleep
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/sleep/
   logo: sleep.png
   demos:
 
 - neuron_name: Systemdate
   description: Give the local system date and time
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/systemdate
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/systemdate/
   logo: time.png
   demos:
     - demo_url: https://www.youtube.com/embed/sNSuQK_SO0w
@@ -97,6 +91,6 @@
 
 - neuron_name: URI
   description: Interacts with HTTP and HTTPS web services
-  doc_url: https://github.com/kalliope-project/kalliope/blob/master/kalliope/neurons/uri
+  doc_url: https://kalliope-project.github.io/kalliope/brain/neurons/uri/
   logo: uri.png
   demos:
