@@ -160,6 +160,12 @@
   logo: quote_icon.png
   demos:
 
+- neuron_name: Recorder
+  description: Record and playback a wave
+  doc_url: https://github.com/corus87/recorder-neuron
+  logo: recorder.png
+  demos:
+      
 - neuron_name: Repeat
   description: Make Kalliope say whatever you want
   doc_url: https://github.com/bacardi55/kalliope-repeat
