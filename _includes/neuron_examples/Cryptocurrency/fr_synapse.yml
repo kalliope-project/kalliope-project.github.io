@@ -1,0 +1,10 @@
+{% raw %}
+- name: "bitcoin-value"
+  signals:
+    - order: "quelle est la valeur du bitcoin"
+  neurons:
+    - cryptocurrency:
+        currency: "BTC"
+        target: "EUR"
+        file_template: templates/bitcoin_euro.j2
+{% endraw %}
