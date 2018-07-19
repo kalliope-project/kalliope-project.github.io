@@ -17,15 +17,15 @@
   doc_url: https://github.com/corus87/calculator-neuron
   logo: calculator.png
   demos:
-  
+
 - neuron_name: Cryptocurrency
   description: Get cryptocurrency price in other currency
   doc_url: https://github.com/royto/kalliope_neuron_cryptocurrency
   logo: cryptocurrency.png
-   demos:
+  demos:
     - demo_url: https://www.youtube.com/embed/ZB2P6cI07Tc
-    synapse: fr_synapse.yml
-    template: fr_template.j2
+      synapse: fr_synapse.yml
+      template: fr_template.j2
 
 - neuron_name: Dht_sensor
   description: Get temperature and humidity from DHT series of humidity and temperature sensors.
@@ -174,7 +174,7 @@
   doc_url: https://github.com/corus87/recorder-neuron
   logo: recorder.png
   demos:
-      
+
 - neuron_name: Repeat
   description: Make Kalliope say whatever you want
   doc_url: https://github.com/bacardi55/kalliope-repeat
