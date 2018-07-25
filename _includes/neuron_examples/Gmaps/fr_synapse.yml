@@ -38,5 +38,6 @@
         direction: "True"
         file_template: "templates/fr_gmaps.j2"
         origin: "{{ origin }}"
+        destination: "{{ destination }}"
 
 {% endraw %}
