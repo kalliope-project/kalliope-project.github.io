@@ -62,6 +62,11 @@
       synapse: fr_synapse.yml
       template: fr_template.j2
 
+- neuron_name: Google keep
+  description: Create and get your lists from google keep
+  doc_url: https://github.com/corus87/gkeep-neuron
+  logo: keep.png
+
 - neuron_name: Google_agenda
   description: Get your next meetings on google calendar
   doc_url: https://github.com/bacardi55/kalliope-google-calendar
