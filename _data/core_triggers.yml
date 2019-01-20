@@ -1,0 +1,6 @@
+- trigger_name: Snowboy
+  description: Offline hotword engine based on Snowboy Engine
+  doc_url: https://kalliope-project.github.io/kalliope/settings/triggers/snowboy/
+  logo: snowboy_logo.png
+  demos:
+

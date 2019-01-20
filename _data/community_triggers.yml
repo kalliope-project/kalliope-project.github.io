@@ -1,0 +1,5 @@
+- trigger_name: Porcupine
+  description: On-device wake word detection powered by deep learning.
+  doc_url: https://github.com/kalliope-project/kalliope_trigger_porcupine
+  logo: porcupine.png
+  demos:
