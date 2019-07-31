@@ -7,7 +7,7 @@
       synapse: fr_synapse.yml
       
 - neuron_name: Answer of everything
-  description: Get answers of all kind of questions
+  description: Ask questions and get answers from Wolfram Alpha, DuckDuckGo and google
   doc_url: https://github.com/kalliope-project/kalliope_neuron_answer_of_everything
   logo: question_mark.png
   demos:
