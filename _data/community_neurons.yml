@@ -5,7 +5,13 @@
   demos:
     - demo_url: https://www.youtube.com/embed/q_giVwsF-6A
       synapse: fr_synapse.yml
-
+      
+- neuron_name: Answer of everything
+  description: Ask questions and get answers from Wolfram Alpha, DuckDuckGo and google
+  doc_url: https://github.com/kalliope-project/kalliope_neuron_answer_of_everything
+  logo: question_mark.png
+  demos:
+  
 - neuron_name: Arithmetics
   description: A quiz for simple calculation tasks
   doc_url: https://github.com/1account/kalliope_neuron_arithmetics
