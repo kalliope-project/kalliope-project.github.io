@@ -224,6 +224,12 @@
   logo: snapcast.png
   demos:
 
+- neuron_name: Sony Bravia Pro monitor
+  description: Control a Sony Bravia Pro monitor from Kalliope
+  doc_url: https://github.com/Riseryn/sony_command
+  logo: tv_remote.png
+  demos:
+
 - neuron_name: System status
   description: Get info about the system (cpu, memory, …)
   doc_url: https://github.com/bacardi55/kalliope-system-status
