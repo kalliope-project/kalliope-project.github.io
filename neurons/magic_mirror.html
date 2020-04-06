@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -68,17 +69,17 @@
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 <span class="c1"># this is placed in settings</span>
-<span class="s">hooks</span><span class="pi">:</span>
-  <span class="s">on_start_speaking</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
+<span class="na">hooks</span><span class="pi">:</span>
+  <span class="na">on_start_speaking</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
 
 <span class="c1"># this is placed in the brain</span>
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
-  <span class="s">signals</span><span class="pi">:</span> <span class="pi">[]</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">magic_mirror</span><span class="pi">:</span>
-        <span class="s">mm_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://127.0.0.1:8080/kalliope"</span>
-        <span class="s">notification</span><span class="pi">:</span> <span class="s2">"</span><span class="s">KALLIOPE"</span>
-        <span class="s">payload</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">kalliope_memory['kalliope_last_tts_message']</span><span class="nv"> </span><span class="s">}}"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">mm-say"</span>
+  <span class="na">signals</span><span class="pi">:</span> <span class="pi">[]</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">magic_mirror</span><span class="pi">:</span>
+        <span class="na">mm_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://127.0.0.1:8080/kalliope"</span>
+        <span class="na">notification</span><span class="pi">:</span> <span class="s2">"</span><span class="s">KALLIOPE"</span>
+        <span class="na">payload</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">kalliope_memory['kalliope_last_tts_message']</span><span class="nv"> </span><span class="s">}}"</span>
 
         </code></pre></figure>
 

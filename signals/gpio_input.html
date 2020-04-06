@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,41 +68,41 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-pir"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
-        <span class="s">pins</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">16</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">detected"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-pir"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">gpio_input</span><span class="pi">:</span>
+        <span class="na">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="m">16</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">detected"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-off"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
-        <span class="s">pins</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">17</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">off"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-off"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">gpio_input</span><span class="pi">:</span>
+        <span class="na">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="m">17</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">off"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-on"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
-        <span class="s">pins</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">22</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">on"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-on"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">gpio_input</span><span class="pi">:</span>
+        <span class="na">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="m">22</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">switch</span><span class="nv"> </span><span class="s">on"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-push-button"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">gpio_input</span><span class="pi">:</span>
-        <span class="s">pins</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">27</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">button</span><span class="nv"> </span><span class="s">pressed"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">gpio-push-button"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">gpio_input</span><span class="pi">:</span>
+        <span class="na">pins</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="m">27</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">button</span><span class="nv"> </span><span class="s">pressed"</span>
 
         </code></pre></figure>
 

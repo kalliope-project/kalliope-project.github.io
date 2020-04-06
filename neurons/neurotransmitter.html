@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,44 +68,44 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse1"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">une</span><span class="nv"> </span><span class="s">question"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">aimez</span><span class="nv"> </span><span class="s">vous</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites?"</span>
-    <span class="pi">-</span> <span class="s">neurotransmitter</span><span class="pi">:</span>
-        <span class="s">from_answer_link</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="s">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
-            <span class="s">answers</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse1"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">une</span><span class="nv"> </span><span class="s">question"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">aimez</span><span class="nv"> </span><span class="s">vous</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites?"</span>
+    <span class="pi">-</span> <span class="na">neurotransmitter</span><span class="pi">:</span>
+        <span class="na">from_answer_link</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+            <span class="na">answers</span><span class="pi">:</span>
               <span class="pi">-</span> <span class="s2">"</span><span class="s">énormément"</span>
               <span class="pi">-</span> <span class="s2">"</span><span class="s">peut-être"</span>
-          <span class="pi">-</span> <span class="s">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
-            <span class="s">answers</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">synapse</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+            <span class="na">answers</span><span class="pi">:</span>
               <span class="pi">-</span> <span class="s2">"</span><span class="s">pas</span><span class="nv"> </span><span class="s">du</span><span class="nv"> </span><span class="s">tout"</span>
               <span class="pi">-</span> <span class="s2">"</span><span class="s">non</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">vraiment"</span>
-        <span class="s">default</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+        <span class="na">default</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vous</span><span class="nv"> </span><span class="s">aimez</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites!</span><span class="nv"> </span><span class="s">Moi</span><span class="nv"> </span><span class="s">aussi!"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse2"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vous</span><span class="nv"> </span><span class="s">aimez</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites!</span><span class="nv"> </span><span class="s">Moi</span><span class="nv"> </span><span class="s">aussi!"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">vous</span><span class="nv"> </span><span class="s">n'aimez</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites.</span><span class="nv"> </span><span class="s">c'est</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">grave."</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse3"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">vous</span><span class="nv"> </span><span class="s">n'aimez</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">frites.</span><span class="nv"> </span><span class="s">c'est</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">grave."</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Je</span><span class="nv"> </span><span class="s">n'ai</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">compris</span><span class="nv"> </span><span class="s">votre</span><span class="nv"> </span><span class="s">réponse"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">synapse4"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Je</span><span class="nv"> </span><span class="s">n'ai</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">compris</span><span class="nv"> </span><span class="s">votre</span><span class="nv"> </span><span class="s">réponse"</span>
 
         </code></pre></figure>
 

@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,22 +68,22 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Google-agenda-next"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">mes</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez-vous"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Recherche</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez-vous</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">cours</span><span class="nv"> </span><span class="s">monsieur"</span>
-    <span class="pi">-</span> <span class="s">google_calendar</span><span class="pi">:</span>
-        <span class="s">credentials_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/path/to/file"</span>
-        <span class="s">client_secret_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/path/to/file"</span>
-        <span class="s">scopes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://www.googleapis.com/auth/calendar.readonly"</span>
-        <span class="s">application_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">kalliope"</span>
-        <span class="s">max_results</span><span class="pi">:</span> <span class="s">3</span>
-        <span class="s">locale</span><span class="pi">:</span> <span class="s">fr_FR.UTF-8</span>
-        <span class="s">no_meeting_msg</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vous</span><span class="nv"> </span><span class="s">n'avez</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">prochain</span><span class="nv"> </span><span class="s">rendez</span><span class="nv"> </span><span class="s">vous"</span>
-        <span class="s">meeting_intro_msg</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vos</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez</span><span class="nv"> </span><span class="s">vous</span><span class="nv"> </span><span class="s">sont"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_google_calendar.j2"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Google-agenda-next"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">mes</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez-vous"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Recherche</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez-vous</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">cours</span><span class="nv"> </span><span class="s">monsieur"</span>
+    <span class="pi">-</span> <span class="na">google_calendar</span><span class="pi">:</span>
+        <span class="na">credentials_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/path/to/file"</span>
+        <span class="na">client_secret_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/path/to/file"</span>
+        <span class="na">scopes</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://www.googleapis.com/auth/calendar.readonly"</span>
+        <span class="na">application_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">kalliope"</span>
+        <span class="na">max_results</span><span class="pi">:</span> <span class="m">3</span>
+        <span class="na">locale</span><span class="pi">:</span> <span class="s">fr_FR.UTF-8</span>
+        <span class="na">no_meeting_msg</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vous</span><span class="nv"> </span><span class="s">n'avez</span><span class="nv"> </span><span class="s">pas</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">prochain</span><span class="nv"> </span><span class="s">rendez</span><span class="nv"> </span><span class="s">vous"</span>
+        <span class="na">meeting_intro_msg</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Vos</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">prochains</span><span class="nv"> </span><span class="s">rendez</span><span class="nv"> </span><span class="s">vous</span><span class="nv"> </span><span class="s">sont"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_google_calendar.j2"</span>
 
         </code></pre></figure>
 

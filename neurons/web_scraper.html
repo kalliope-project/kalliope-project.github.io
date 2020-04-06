@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,37 +68,37 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Programme-tv"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">qu'est-ce</span><span class="nv"> </span><span class="s">qu'il</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">télé</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">soir"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Probablement</span><span class="nv"> </span><span class="s">rien,</span><span class="nv"> </span><span class="s">mais</span><span class="nv"> </span><span class="s">je</span><span class="nv"> </span><span class="s">regarde"</span>
-    <span class="pi">-</span> <span class="s">web_scraper</span><span class="pi">:</span>
-        <span class="s">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://tvmag.lefigaro.fr/programme-tv/ce_soir_la_tv.html"</span>
-        <span class="s">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__prog"</span>
-        <span class="s">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__logo</span><span class="nv"> </span><span class="s">i"</span>
-        <span class="s">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__part1</span><span class="nv"> </span><span class="s">h3"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_programme_tv.j2"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Programme-tv"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">qu'est-ce</span><span class="nv"> </span><span class="s">qu'il</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">télé</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">soir"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Probablement</span><span class="nv"> </span><span class="s">rien,</span><span class="nv"> </span><span class="s">mais</span><span class="nv"> </span><span class="s">je</span><span class="nv"> </span><span class="s">regarde"</span>
+    <span class="pi">-</span> <span class="na">web_scraper</span><span class="pi">:</span>
+        <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://tvmag.lefigaro.fr/programme-tv/ce_soir_la_tv.html"</span>
+        <span class="na">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__prog"</span>
+        <span class="na">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__logo</span><span class="nv"> </span><span class="s">i"</span>
+        <span class="na">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.tvm-grid-channel__part1</span><span class="nv"> </span><span class="s">h3"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_programme_tv.j2"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Cinema-program"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">qu'est-ce</span><span class="nv"> </span><span class="s">qu'il</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">au</span><span class="nv"> </span><span class="s">cinéma</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">moment"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">say</span><span class="pi">:</span>
-        <span class="s">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Je</span><span class="nv"> </span><span class="s">regarde"</span>
-    <span class="pi">-</span> <span class="s">web_scraper</span><span class="pi">:</span>
-        <span class="s">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://www.allocine.fr/film/aucinema/"</span>
-        <span class="s">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">section#content-start</span><span class="nv"> </span><span class="s">div.card-entity-list"</span>
-        <span class="s">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">h2.meta-title"</span>
-        <span class="s">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.meta-body</span><span class="nv"> </span><span class="s">div.meta-body-actor"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_cinema_program.j2"</span>
-    <span class="pi">-</span> <span class="s">web_scraper</span><span class="pi">:</span>
-        <span class="s">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://www.allocine.fr/film/aucinema/?page=2"</span>
-        <span class="s">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">section#content-start</span><span class="nv"> </span><span class="s">div.card-entity-list"</span>
-        <span class="s">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">h2.meta-title"</span>
-        <span class="s">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.meta-body</span><span class="nv"> </span><span class="s">div.meta-body-actor"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_cinema_program.j2"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Cinema-program"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">qu'est-ce</span><span class="nv"> </span><span class="s">qu'il</span><span class="nv"> </span><span class="s">y</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">au</span><span class="nv"> </span><span class="s">cinéma</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">ce</span><span class="nv"> </span><span class="s">moment"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">say</span><span class="pi">:</span>
+        <span class="na">message</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Je</span><span class="nv"> </span><span class="s">regarde"</span>
+    <span class="pi">-</span> <span class="na">web_scraper</span><span class="pi">:</span>
+        <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://www.allocine.fr/film/aucinema/"</span>
+        <span class="na">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">section#content-start</span><span class="nv"> </span><span class="s">div.card-entity-list"</span>
+        <span class="na">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">h2.meta-title"</span>
+        <span class="na">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.meta-body</span><span class="nv"> </span><span class="s">div.meta-body-actor"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_cinema_program.j2"</span>
+    <span class="pi">-</span> <span class="na">web_scraper</span><span class="pi">:</span>
+        <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://www.allocine.fr/film/aucinema/?page=2"</span>
+        <span class="na">main_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">section#content-start</span><span class="nv"> </span><span class="s">div.card-entity-list"</span>
+        <span class="na">title_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">h2.meta-title"</span>
+        <span class="na">description_selector</span><span class="pi">:</span> <span class="s2">"</span><span class="s">div.meta-body</span><span class="nv"> </span><span class="s">div.meta-body-actor"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_cinema_program.j2"</span>
 
         </code></pre></figure>
 

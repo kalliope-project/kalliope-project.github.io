@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,16 +68,16 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">wikipedia-search"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">wikipedia_searcher</span><span class="pi">:</span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
-        <span class="s">sentences</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
-        <span class="s">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/wikipedia_returned_value.j2"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">cherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">wikipedia-search"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">wikipedia_searcher</span><span class="pi">:</span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span>
+        <span class="na">sentences</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1"</span>
+        <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/wikipedia_returned_value.j2"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">cherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">sur</span><span class="nv"> </span><span class="s">wikipédia</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
 
         </code></pre></figure>
 

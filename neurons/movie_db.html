@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,73 +68,73 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="err">            </span>
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">search-movie"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">film</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">movie}}"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">MOVIE"</span><span class="err"></span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
-        <span class="s">movie_extra</span><span class="pi">:</span> <span class="s2">"</span><span class="s">credits"</span><span class="err"></span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_movie.j2</span><span class="err"></span>
-        <span class="s">movie</span><span class="pi">:</span> <span class="pi">{{</span> <span class="nv">movie</span> <span class="pi">}}</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">search-movie"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">film</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">movie}}"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">MOVIE"</span><span class="err"></span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
+        <span class="na">movie_extra</span><span class="pi">:</span> <span class="s2">"</span><span class="s">credits"</span><span class="err"></span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_movie.j2</span><span class="err"></span>
+        <span class="na">movie</span><span class="pi">:</span> <span class="pi">{{</span> <span class="nv">movie</span> <span class="pi">}}</span><span class="err"></span>
 <span class="err"></span>
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">movie-people"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">l'acteur</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">l'actrice</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">réalisateur</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">réalisatrice</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">PEOPLE"</span><span class="err"></span>
-        <span class="s">say_template:</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">movie-people"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">l'acteur</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">l'actrice</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">réalisateur</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">recherche</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">réalisatrice</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">people</span><span class="nv"> </span><span class="s">}}"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">PEOPLE"</span><span class="err"></span>
+        <span class="na">say_template</span><span class="pi">:</span><span class="err"></span>
         <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">name</span><span class="nv"> </span><span class="s">}},</span><span class="nv"> </span><span class="s">ne</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">birthday</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">{{place_of_birth</span><span class="nv"> </span><span class="s">}},</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">biography</span><span class="nv"> </span><span class="s">}},</span><span class="nv"> </span><span class="s">connu</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">{{known_for[0].title}}</span><span class="nv"> </span><span class="s">"</span><span class="err"></span>
-        <span class="s">people</span><span class="pi">:</span> <span class="pi">{{</span><span class="nv"> people</span> <span class="pi">}}</span><span class="err"></span>
+        <span class="na">people</span><span class="pi">:</span> <span class="pi">{{</span><span class="nv"> people</span> <span class="pi">}}</span><span class="err"></span>
 <span class="err"></span>
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">popular-movie"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">populaires"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">POPULAR"</span><span class="err"></span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_popular.j2</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">popular-movie"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">populaires"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">POPULAR"</span><span class="err"></span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_popular.j2</span><span class="err"></span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">top-rated-movie"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">mieux</span><span class="nv"> </span><span class="s">notées"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">TOP_RATED"</span><span class="err"></span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_top_rated.j2</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">top-rated-movie"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">mieux</span><span class="nv"> </span><span class="s">notées"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">TOP_RATED"</span><span class="err"></span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_top_rated.j2</span><span class="err"></span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">upcoming-movie"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">prochainement</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">l'affiche"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">UPCOMING"</span><span class="err"></span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
-        <span class="s">region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">FR"</span><span class="err"></span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_upcoming.j2</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">upcoming-movie"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">prochainement</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">l'affiche"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">UPCOMING"</span><span class="err"></span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
+        <span class="na">region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">FR"</span><span class="err"></span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_upcoming.j2</span><span class="err"></span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">now-playing-movie"</span><span class="err"></span>
-  <span class="s">signals:</span><span class="err"></span>
-    <span class="s">- order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">au</span><span class="nv"> </span><span class="s">cinéma"</span><span class="err"></span>
-  <span class="s">neurons:</span><span class="err"></span>
-    <span class="s">- movie_db:</span><span class="err"></span>
-        <span class="s">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
-        <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">NOW_PLAYING"</span><span class="err"></span>
-        <span class="s">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
-        <span class="s">region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">FR"</span><span class="err"></span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_now_playing.j2</span><span class="err"></span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">now-playing-movie"</span><span class="err"></span>
+  <span class="na">signals</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">les</span><span class="nv"> </span><span class="s">films</span><span class="nv"> </span><span class="s">au</span><span class="nv"> </span><span class="s">cinéma"</span><span class="err"></span>
+  <span class="na">neurons</span><span class="pi">:</span><span class="err"></span>
+    <span class="pi">-</span> <span class="na">movie_db</span><span class="pi">:</span><span class="err"></span>
+        <span class="na">api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">f22dee8896fa736e914d00504a7fc6b0"</span><span class="err"></span>
+        <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">NOW_PLAYING"</span><span class="err"></span>
+        <span class="na">language</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fr"</span><span class="err"></span>
+        <span class="na">region</span><span class="pi">:</span> <span class="s2">"</span><span class="s">FR"</span><span class="err"></span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s">templates/fr_movie_db_now_playing.j2</span><span class="err"></span>
 
 
         </code></pre></figure>

@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -68,46 +69,46 @@
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 <span class="nn">---</span>
-  <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Get-shopping-list"</span>
-    <span class="s">signals</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">courses"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">course"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">listes</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
-    <span class="s">neurons</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">todotxt</span><span class="pi">:</span>
-          <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">get"</span>
-          <span class="s">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
-          <span class="s">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
-          <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_todotxt.j2"</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Get-shopping-list"</span>
+    <span class="na">signals</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">courses"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">list</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">course"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">listes</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">courses"</span>
+    <span class="na">neurons</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">todotxt</span><span class="pi">:</span>
+          <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">get"</span>
+          <span class="na">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
+          <span class="na">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
+          <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/fr_todotxt.j2"</span>
 
-  <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">add-item-to-shopping-list"</span>
-    <span class="s">signals</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">penser</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheter</span><span class="nv"> </span><span class="s">{{content}}"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pensé</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheté</span><span class="nv"> </span><span class="s">{{content}}"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pensé</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheter</span><span class="nv"> </span><span class="s">{{content}}"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">penser</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheté</span><span class="nv"> </span><span class="s">{{content}}"</span>
-    <span class="s">neurons</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">todotxt</span><span class="pi">:</span>
-          <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">add"</span>
-          <span class="s">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
-          <span class="s">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
-          <span class="s">content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">content}}"</span>
-          <span class="s">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">J'ai</span><span class="nv"> </span><span class="s">ajouté</span><span class="nv"> </span><span class="s">{{added_task.task}}</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">courses"</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">add-item-to-shopping-list"</span>
+    <span class="na">signals</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">penser</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheter</span><span class="nv"> </span><span class="s">{{content}}"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pensé</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheté</span><span class="nv"> </span><span class="s">{{content}}"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pensé</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheter</span><span class="nv"> </span><span class="s">{{content}}"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">penser</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">acheté</span><span class="nv"> </span><span class="s">{{content}}"</span>
+    <span class="na">neurons</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">todotxt</span><span class="pi">:</span>
+          <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">add"</span>
+          <span class="na">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
+          <span class="na">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
+          <span class="na">content</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">content}}"</span>
+          <span class="na">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">J'ai</span><span class="nv"> </span><span class="s">ajouté</span><span class="nv"> </span><span class="s">{{added_task.task}}</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">courses"</span>
 
-  <span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">delete-shopping-list"</span>
-    <span class="s">signals</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">supprimer</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste"</span>
-      <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">supprime</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste"</span>
-    <span class="s">neurons</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">todotxt</span><span class="pi">:</span>
-          <span class="s">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">del"</span>
-          <span class="s">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
-          <span class="s">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
-          <span class="s">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">J'ai</span><span class="nv"> </span><span class="s">vidé</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">delete-shopping-list"</span>
+    <span class="na">signals</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">supprimer</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste"</span>
+      <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">supprime</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste"</span>
+    <span class="na">neurons</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">todotxt</span><span class="pi">:</span>
+          <span class="na">action</span><span class="pi">:</span> <span class="s2">"</span><span class="s">del"</span>
+          <span class="na">todotxt_file</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{todofile}}"</span>
+          <span class="na">project</span><span class="pi">:</span> <span class="s2">"</span><span class="s">courses"</span>
+          <span class="na">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">J'ai</span><span class="nv"> </span><span class="s">vidé</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">liste</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">course"</span>
 
 
         </code></pre></figure>

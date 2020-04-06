@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -68,32 +69,32 @@
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Uber-time-estimate-by-address"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">chauffeurs"</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeurs"</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Combien</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeur"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">uber</span><span class="pi">:</span>
-        <span class="s">uber_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{uber_api_key}}"</span>
-        <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
-        <span class="s">start_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{home_address}}"</span>
-        <span class="s">driving_mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uberX"</span>
-        <span class="s">say_template</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Uber-time-estimate-by-address"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">1</span><span class="nv"> </span><span class="s">chauffeurs"</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeurs"</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Combien</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">temps</span><span class="nv"> </span><span class="s">d'attente</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeur"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">uber</span><span class="pi">:</span>
+        <span class="na">uber_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{uber_api_key}}"</span>
+        <span class="na">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
+        <span class="na">start_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{home_address}}"</span>
+        <span class="na">driving_mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uberX"</span>
+        <span class="na">say_template</span><span class="pi">:</span>
             <span class="pi">-</span> <span class="s2">"</span><span class="s">Un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">{{driving_mode}}</span><span class="nv"> </span><span class="s">peut</span><span class="nv"> </span><span class="s">arriver</span><span class="nv"> </span><span class="s">d'ici</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">time_to_get_driver</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">minutes"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Uber-time-and-price-by-addresses"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">prix</span><span class="nv"> </span><span class="s">d'un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">aller</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{end_address}}"</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">prix</span><span class="nv"> </span><span class="s">d'</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">aller</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{end_address}}"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">uber</span><span class="pi">:</span>
-        <span class="s">uber_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{uber_api_key}}"</span>
-        <span class="s">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
-        <span class="s">start_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{home_address}}"</span>
-        <span class="s">driving_mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uberX"</span>
-        <span class="s">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Le</span><span class="nv"> </span><span class="s">trajet</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">{{driving_mode}}</span><span class="nv"> </span><span class="s">prendra</span><span class="nv"> </span><span class="s">{{ride.duration}}</span><span class="nv"> </span><span class="s">minutes</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">coutera</span><span class="nv"> </span><span class="s">entre</span><span class="nv"> </span><span class="s">{{ride.low_estimate}}</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">{{ride.high_estimate}}</span><span class="nv"> </span><span class="s">euros.</span><span class="nv"> </span><span class="s">Un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">peut</span><span class="nv"> </span><span class="s">arriver</span><span class="nv"> </span><span class="s">d'ici</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">time_to_get_driver</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">minutes.</span><span class="nv"> </span><span class="s">"</span>
-        <span class="s">end_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">end_address</span><span class="nv"> </span><span class="s">}}"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Uber-time-and-price-by-addresses"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">prix</span><span class="nv"> </span><span class="s">d'un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">aller</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{end_address}}"</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">prix</span><span class="nv"> </span><span class="s">d'</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">pour</span><span class="nv"> </span><span class="s">aller</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{end_address}}"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">uber</span><span class="pi">:</span>
+        <span class="na">uber_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{uber_api_key}}"</span>
+        <span class="na">gmaps_api_key</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmaps_api_key}}"</span>
+        <span class="na">start_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{home_address}}"</span>
+        <span class="na">driving_mode</span><span class="pi">:</span> <span class="s2">"</span><span class="s">uberX"</span>
+        <span class="na">say_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Le</span><span class="nv"> </span><span class="s">trajet</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">{{driving_mode}}</span><span class="nv"> </span><span class="s">prendra</span><span class="nv"> </span><span class="s">{{ride.duration}}</span><span class="nv"> </span><span class="s">minutes</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">coutera</span><span class="nv"> </span><span class="s">entre</span><span class="nv"> </span><span class="s">{{ride.low_estimate}}</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">{{ride.high_estimate}}</span><span class="nv"> </span><span class="s">euros.</span><span class="nv"> </span><span class="s">Un</span><span class="nv"> </span><span class="s">chauffeur</span><span class="nv"> </span><span class="s">peut</span><span class="nv"> </span><span class="s">arriver</span><span class="nv"> </span><span class="s">d'ici</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">time_to_get_driver</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">minutes.</span><span class="nv"> </span><span class="s">"</span>
+        <span class="na">end_address</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">end_address</span><span class="nv"> </span><span class="s">}}"</span>
 
 
         </code></pre></figure>

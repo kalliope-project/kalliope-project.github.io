@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,15 +68,15 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">check-email"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">est-ce</span><span class="nv"> </span><span class="s">que</span><span class="nv"> </span><span class="s">j'ai</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">emails?"</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">mes</span><span class="nv"> </span><span class="s">emails?"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">gmail_checker</span><span class="pi">:</span>
-        <span class="s">username</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmail_login}}"</span>
-        <span class="s">password</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmil_password}}"</span>
-        <span class="s">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/gmail.j2"</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">check-email"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">est-ce</span><span class="nv"> </span><span class="s">que</span><span class="nv"> </span><span class="s">j'ai</span><span class="nv"> </span><span class="s">des</span><span class="nv"> </span><span class="s">emails?"</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">quels</span><span class="nv"> </span><span class="s">sont</span><span class="nv"> </span><span class="s">mes</span><span class="nv"> </span><span class="s">emails?"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">gmail_checker</span><span class="pi">:</span>
+        <span class="na">username</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmail_login}}"</span>
+        <span class="na">password</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{gmil_password}}"</span>
+        <span class="na">file_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">templates/gmail.j2"</span>
 
         </code></pre></figure>
 
@@ -86,10 +87,10 @@
 Vous n'avez pas d'email
 <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
 Vous avez <span class="cp">{{</span> <span class="nv">unread</span> <span class="cp">}}</span> d'email
-<span class="cp">{%</span> <span class="k">set</span> <span class="nv">count</span> <span class="err">=</span> <span class="nv">1</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">set</span> <span class="nv">count</span> <span class="o">=</span> <span class="nv">1</span> <span class="cp">%}</span>
 <span class="cp">{%</span> <span class="k">for</span> <span class="nv">subject</span> <span class="ow">in</span> <span class="nv">subjects</span> <span class="cp">%}</span>
      email <span class="cp">{{</span> <span class="nv">count</span> <span class="cp">}}</span>. <span class="cp">{{</span> <span class="nv">subject</span> <span class="cp">}}</span>
-     <span class="cp">{%</span> <span class="k">set</span> <span class="nv">count</span> <span class="err">=</span> <span class="nv">count</span> <span class="o">+</span> <span class="nv">1</span> <span class="cp">%}</span>
+     <span class="cp">{%</span> <span class="k">set</span> <span class="nv">count</span> <span class="o">=</span> <span class="nv">count</span> <span class="o">+</span> <span class="nv">1</span> <span class="cp">%}</span>
     <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
 <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
 

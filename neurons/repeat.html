@@ -40,6 +40,7 @@
                 <li ><a href="/signals_marketplace.html">Signals marketplace</a></li>
                 <li ><a href="/neurons_marketplace.html">Neurons marketplace</a></li>
                 <li ><a href="/triggers_marketplace.html">Triggers marketplace</a></li>
+                <li ><a href="/tts_marketplace.html">TTS marketplace</a></li>
                 <li ><a href="/starter_kit.html">Starter kits</a></li>
                 <li ><a href="/side_projects.html">Side projects</a></li>
                 <li ><a href="/brain_examples.html">Brain examples</a></li>
@@ -67,31 +68,31 @@
 
         <h3 class="text-primary">Synapse</h3>
         <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">            
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">répète</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
-        <span class="s">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-        <span class="s">say_template</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">répète</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">repeat</span><span class="pi">:</span>
+        <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+        <span class="na">say_template</span><span class="pi">:</span>
           <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Say-hello-to"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dis</span><span class="nv"> </span><span class="s">bonjour</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
-        <span class="s">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{query}}"</span>
-        <span class="s">say_template</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Say-hello-to"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">dis</span><span class="nv"> </span><span class="s">bonjour</span><span class="nv"> </span><span class="s">à</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">repeat</span><span class="pi">:</span>
+        <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{query}}"</span>
+        <span class="na">say_template</span><span class="pi">:</span>
           <span class="pi">-</span> <span class="s2">"</span><span class="s">Bonjour</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}},</span><span class="nv"> </span><span class="s">et</span><span class="nv"> </span><span class="s">bienvenue"</span>
 
-<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat-via-api"</span>
-  <span class="s">signals</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">api-repeat-cmd</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
-  <span class="s">neurons</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">repeat</span><span class="pi">:</span>
-        <span class="s">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{query}}"</span>
-        <span class="s">say_template</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Repeat-via-api"</span>
+  <span class="na">signals</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">order</span><span class="pi">:</span> <span class="s2">"</span><span class="s">api-repeat-cmd</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
+  <span class="na">neurons</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">repeat</span><span class="pi">:</span>
+        <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">{{query}}"</span>
+        <span class="na">say_template</span><span class="pi">:</span>
           <span class="pi">-</span> <span class="s2">"</span><span class="s">{{</span><span class="nv"> </span><span class="s">query</span><span class="nv"> </span><span class="s">}}"</span>
 
         </code></pre></figure>
