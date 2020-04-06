@@ -7,7 +7,7 @@ This repository contains the code of the static website.
 
 The code needs to be compiled an then pushed in a dedicated branch.
 
-## Dev env installation (Ubuntu 16.04 & 18.04)
+## Dev env installation (Ubuntu 18.04 & 20.04)
 
 Install Ruby
 ```
@@ -26,7 +26,7 @@ git clone https://github.com/kalliope-project/kalliope-project.github.io.git
 
 Install libs
 ```
-kalliope-project.github.io
+cd kalliope-project.github.io
 bundle install
 ```
 
@@ -37,7 +37,7 @@ bundle exec jekyll serve --host=0.0.0.0
 
 ## Push build to github (Admin only)
 
-As we use a community plugin (https://github.com/avillafiorita/jekyll-datapage_gen). We need to generate the site locally and then push the site's static files to the GitHub Pages site. See [Github doc](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/) and [this page](https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200) to know how to use a non supported Jeykill pluggin into Github.
+As we use a community plugin ([ekyll-datapage_gen](https://github.com/avillafiorita/jekyll-datapage_gen)). We need to generate the site locally and then push the site's static files to the GitHub Pages site. See [Github doc](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/) and [this page](https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200) to know how to use a non supported Jeykill pluggin into Github.
 
 Code in the branch "source"
 ```

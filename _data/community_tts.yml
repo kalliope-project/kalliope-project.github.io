@@ -1,0 +1,5 @@
+- name: PollyTTS
+  description: AWS Polly TTS for Kalliope
+  doc_url: https://github.com/corus87/kalliope_pollytts
+  logo: polly_tts.png
+  demos:

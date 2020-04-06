@@ -1,0 +1,41 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Community TTS</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td class="col-md-1"><strong>Logo</strong></td>
+                    <td class="col-md-2"><strong>TTS name</strong></td>
+                    <td class="col-md-7"><strong>Description</strong></td>
+                    <td class="col-md-1"><strong>Doc</strong></td>
+                    <td class="col-md-1"><strong>Examples</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for tts in include.ttss %}
+                <tr>
+                    <td class="vert-align text-primary text-center">
+                        <img class="circle" src="/images/{{ tts.logo }}" width="50" height="50">
+                    </td>
+                    <td class="vert-align text-primary">{{ tts.name }}</td>
+                    <td class="vert-align">{{ tts.description }}</td>
+                    <td class="vert-align">
+                        <a href="{{ tts.doc_url }}" class="btn btn-primary btn-lg" type="button">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </a>
+                    </td>
+                    <td class="vert-align">
+                        {% if tts.demos %}
+                        <a href="{{ tts.name | datapage_url: 'ttss' }}" class="btn btn-info btn-lg" type="button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

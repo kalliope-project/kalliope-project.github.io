@@ -1,0 +1,18 @@
+---
+title: Kalliope
+---
+{% include header.html %}
+{% include navbar.html %}
+<div class="container">
+    <div class="well">
+        <p class="lead">
+            TTS for Text To Speech is the engine in charge of making Kalliope speak out loud.<br/><br/>
+            Retrieve the list of core TTS <a href="https://kalliope-project.github.io/kalliope/settings/settings/#available-tts">here</a>.
+        </p>
+    </div>
+
+    <!-- community tts -->
+    {% include community_tts.html ttss=site.data.community_tts %}
+    
+</div>
+{% include footer.html %}
