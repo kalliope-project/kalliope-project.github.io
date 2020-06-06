@@ -297,3 +297,8 @@
   demos:
     - demo_url: https://www.youtube.com/embed/EaCkXMi2q2I
       synapse: fr_synapse.yml
+
+- neuron_name: soundtouch
+  description: Play sound from Bose SoundTouch Player
+  doc_url: https://github.com/sebcaps/kalliope-soundtouch.git
+  logo: bosesoundtouchlogo.png
