@@ -45,6 +45,12 @@
   logo: domoticz.png
   demos:
 
+- neuron_name: Editor
+  description: Edit your Kalliope config and other files in the browser
+  doc_url: https://github.com/corus87/editor-neuron
+  logo: editor.png
+  demos:
+
 - neuron_name: Facebook
   description: Post and Read message on Facebook
   doc_url: https://github.com/kalliope-project/kalliope_neuron_facebook
